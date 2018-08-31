@@ -47,6 +47,17 @@ function maskerItem(image){
     TweenMax.set(image, {clip:`${top}px, ${right}px, ${bottom}px, ${left}px`})
 }
 
+function arrayClean(points, amount){
+    const pointsClean = []
+    points.forEach((item, i)=>{
+        if(i%amount===0){
+            pointsClean.push(item)
+        }
+    })
+
+    return pointsClean
+}
 
 
-export {writer, masker}
+
+export {writer, masker, arrayClean}
