@@ -156,6 +156,39 @@ sup {
   opacity: 1;
 }
 
+.frame1 #f2 {
+  -webkit-transform: translate(300px, 0px);
+  -ms-transform: translate(300px, 0px);
+  transform: translate(300px, 0px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.frame1 #arrow_yellow_1 {
+  -webkit-transform: translate(190px, 53px);
+  -ms-transform: translate(190px, 53px);
+  transform: translate(190px, 53px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.frame1 #arrow_green_2a {
+  -webkit-transform: translate(350px, 0px);
+  -ms-transform: translate(350px, 0px);
+  transform: translate(350px, 0px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
 #banner {
   font-size: 20px;
   color: #333;

@@ -6,6 +6,20 @@
 
 .frame1 {
 	opacity: 1;
+
+
+	#f2{
+		@include pos(300, 0);
+		
+	}
+
+	#arrow_yellow_1{
+		@include pos(190, 53);		
+	}
+
+	#arrow_green_2a{
+		@include pos(350, 0);		
+	}
 }
 
 
