@@ -1,0 +1,38 @@
+@import '../../../_common/styles/common.scss';
+
+
+
+.frame1 {
+	opacity: 1;
+
+
+	#f2{
+		@include pos(300, 0);		
+	}
+
+	#arrow_yellow_1{
+		@include pos(20, -10);		
+	}
+
+	#super{ @include pos(113, 9); }
+	#arrow_green_1{ @include pos(143, 39); }
+	#arrow_green_2{ @include pos(408, 41); }
+	#arrow_green_3{ @include pos(446, 37); }
+	#arrow_green_4{ @include pos(640, -11); }
+	
+	
+}
+
+.frame2{
+	#cta_circle{ @include pos-scale(211, 37, 1); }
+}
+
+#banner{	
+	width: 728px;
+	height: 90px;
+}
+
+.hand, .masker, .end{
+	opacity: 0;
+}
+

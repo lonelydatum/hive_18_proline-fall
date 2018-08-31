@@ -98,7 +98,7 @@ function hand(points, div, opt) {
         var myImg = document.querySelector("#" + div + " img");
         var options = _extends({
 
-            brushsize: 8,
+            brushSize: 4,
             speed: 8,
             repeat: 0,
             cleanFromBehind: true,
@@ -109,11 +109,16 @@ function hand(points, div, opt) {
             }
         });
 
-        void 0;
         myCanvas.width = myImg.width;
         myCanvas.height = myImg.height;
 
         var handwrite = new _handwrite2["default"](myCanvas, myImg);
+        var holder = document.querySelector("#" + div);
+
+        // handwrite.brushSize = 1
+        // console.log(handwrite)
+        // holder.appendChild(handwrite.canvasMask)
+        //
         handwrite.draw(points, options);
 
         TweenLite.set(myImg, { opacity: 0 });
@@ -1846,24 +1851,25 @@ function do_arrow_green() {
 
 function do_super1() {
     TweenMax.set('#super1', { opacity: 1 });
-    (0, _commonJsProline.hand)(_super1.hand_super1, "super1", { brushsize: 8, speed: 7 }).then(do_super2);
+    (0, _commonJsProline.hand)(_super1.hand_super1, "super1", { brushSize: 8, speed: 6 }).then(do_super2);
 }
 
 function do_super2() {
     TweenMax.set('#super2', { opacity: 1 });
-    (0, _commonJsProline.hand)(_super2.hand_super2, "super2", { brushsize: 5, speed: 5 }).then(do_super3);
+    (0, _commonJsProline.hand)(_super2.hand_super2, "super2", { brushSize: 5, speed: 6 }).then(do_super3);
 }
 
 function do_super3() {
     TweenMax.set('#super3', { opacity: 1 });
-    (0, _commonJsProline.hand)(_super3.hand_super3, "super3", { brushsize: 5, speed: 7 }).then(do_arrow_yellow_1);
+    (0, _commonJsProline.hand)(_super3.hand_super3, "super3", { brushSize: 5, speed: 6 }).then(do_arrow_yellow_1);
 }
 
 function do_arrow_yellow_1() {
-    TweenMax.to('.pan', 2, { x: -300 });
-    TweenLite.delayedCall(.7, function () {
+
+    TweenLite.delayedCall(1, function () {
+        TweenMax.to('.pan', 2, { x: -300 });
         TweenMax.set('#arrow_yellow_1', { opacity: 1 });
-        (0, _commonJsProline.hand)(_arrow_yellow_1.arrow_yellow_1, "arrow_yellow_1", { brushsize: 5, speed: 8 }).then(do_arrow_green_2a);
+        (0, _commonJsProline.hand)(_arrow_yellow_1.arrow_yellow_1, "arrow_yellow_1", { brushsize: 5, speed: 5 }).then(do_arrow_green_2a);
     });
 }
 
@@ -1884,11 +1890,11 @@ function do_arrow_green_2a() {
     var arrow_green_2e = _masker.arrow_green_2e;
 
     tl.from(arrow_green_2a, .5, { clip: arrow_green_2a.height + "px, " + arrow_green_2a.width + "px, " + arrow_green_2a.height + "px, " + 0 + "px" });
-    tl.from(arrow_green_2b, .5, { clip: arrow_green_2b.height + "px, " + arrow_green_2b.width + "px, " + arrow_green_2b.height + "px, " + 0 + "px" }, "-=.2");
-    tl.from(arrow_green_2c, .5, { clip: arrow_green_2c.height + "px, " + arrow_green_2c.width + "px, " + arrow_green_2c.height + "px, " + arrow_green_2c.width + "px" }, "-=.3");
-    tl.from(arrow_green_2d, .5, { clip: 0 + "px, " + arrow_green_2d.width + "px, " + 0 + "px, " + 0 + "px" }, "-=.3");
+    tl.from(arrow_green_2b, .5, { clip: arrow_green_2b.height + "px, " + arrow_green_2b.width + "px, " + arrow_green_2b.height + "px, " + 0 + "px" }, "-=.4");
+    tl.from(arrow_green_2c, .5, { clip: arrow_green_2c.height + "px, " + arrow_green_2c.width + "px, " + arrow_green_2c.height + "px, " + arrow_green_2c.width + "px" }, "-=.4");
+    tl.from(arrow_green_2d, .5, { clip: 0 + "px, " + arrow_green_2d.width + "px, " + 0 + "px, " + 0 + "px" }, "-=.4");
 
-    tl.add("end");
+    tl.add("end", "+=.5");
     tl.to('.pan', 2, { x: -600 }, "end");
     tl.from(arrow_green_2e, .5, { clip: 0 + "px, " + arrow_green_2e.width + "px, " + 0 + "px, " + 0 + "px" }, "end+=.5");
 

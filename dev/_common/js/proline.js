@@ -66,7 +66,7 @@ function hand(points, div, opt){
         const myImg = document.querySelector(`#${div} img`);
         const options = {
             
-            brushsize:8,
+            brushSize:4,
             speed:8,
             repeat:0,
             cleanFromBehind:true,
@@ -77,11 +77,17 @@ function hand(points, div, opt){
             }
         }
 
-        console.log(myCanvas)
+        
         myCanvas.width = myImg.width
         myCanvas.height = myImg.height
 
         const handwrite = new Handwrite(myCanvas, myImg);
+        const holder = document.querySelector(`#${div}`)
+        
+        // handwrite.brushSize = 1
+        // console.log(handwrite)
+        // holder.appendChild(handwrite.canvasMask)
+        // 
         handwrite.draw(points, options);
 
         TweenLite.set(myImg, {opacity:0})
