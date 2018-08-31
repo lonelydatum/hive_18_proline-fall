@@ -2,31 +2,6 @@
 
 
 
-.frame1 {
-	opacity: 1;
-
-
-	#f2{
-		@include pos(300, 0);		
-	}
-
-	#arrow_yellow_1{
-		@include pos(190, 53);		
-	}
-
-	#arrow_green_1{ @include pos(-12, -1); }
-	#arrow_green_2a{ @include pos(350, 178); }
-	#arrow_green_2b{ @include pos(428, 152); }
-	#arrow_green_2c{ @include pos(490, 155); }
-	#arrow_green_2d{ @include pos(524, 0); }
-	#arrow_green_2e{ @include pos(508, 112); }
-	
-}
-
-.frame2{
-	#cta_circle{ @include pos(61, 148); }
-}
-
 
 
 #legalBtn{	
@@ -39,11 +14,7 @@
 }
 
 #banner{	
-	width: 300px;
-	height: 250px;
-}
-
-.hand, .masker, .end{
-	opacity: 0;
+	width: 320px;
+	height: 50px;
 }
 

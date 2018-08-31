@@ -13,7 +13,7 @@ var _handwrite = require('handwrite');
 
 var _handwrite2 = _interopRequireDefault(_handwrite);
 
-TweenLite.defaultEase = Power2.easeInOut;
+TweenLite.defaultEase = Power2.easeOut;
 
 function writer(points) {
     var image = document.getElementById("cta_O");

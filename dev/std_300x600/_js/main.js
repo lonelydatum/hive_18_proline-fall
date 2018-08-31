@@ -1,6 +1,6 @@
 import { writer, masker, arrayClean, hand } from "../../_common/js/proline";
 
-import Handwrite from 'handwrite';
+
 import { arrow_green_1 } from "./arrow_green_1";
 import { hand_super1 } from "./super1";
 import { hand_super2 } from "./super2";
@@ -9,7 +9,7 @@ import { arrow_yellow_1 } from "./arrow_yellow_1";
 import { arrow_green_2a } from "./arrow_green_2a";
 import { cta_circle } from "./cta_circle";
 
-// console.log(arrayClean(cta_circle, 3))
+console.log(arrayClean(hand_super3, 3))
 
 
 
@@ -19,7 +19,7 @@ setTimeout(()=>{
 
 
 function start(){
-    do_arrow_green_2a()    
+    do_arrow_green()    
 }
 
 
@@ -31,26 +31,17 @@ function do_arrow_green(){
 
 function do_super1(){
     TweenMax.set('#super1', {opacity:1})
-    hand(hand_super1, "super1", {brushSize:8, speed:6}).then(do_super2)
+    hand(hand_super1, "super1", {brushSize:5, speed:4}).then(do_super2)
 }
 
 function do_super2(){
     TweenMax.set('#super2', {opacity:1})
-    hand(hand_super2, "super2", {brushSize:5, speed:6}).then(do_super3)
+    hand(hand_super2, "super2", {brushSize:5, speed:4}).then(do_super3)
 }
 
 function do_super3(){
     TweenMax.set('#super3', {opacity:1})
-    hand(hand_super3, "super3", {brushSize:5, speed:6}).then(do_arrow_yellow_1)
-}
-
-function do_arrow_yellow_1(){
-    
-    TweenLite.delayedCall(1, ()=>{
-        TweenMax.to('.pan', 2, {x:-300})    
-        TweenMax.set('#arrow_yellow_1', {opacity:1})
-        hand(arrow_yellow_1, "arrow_yellow_1", {brushsize:5, speed:5}).then(do_arrow_green_2a)
-    }); 
+    hand(hand_super3, "super3", {brushSize:5, speed:4}).then(do_arrow_green_2a)
 }
 
 

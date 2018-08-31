@@ -13,7 +13,7 @@ var _handwrite = require('handwrite');
 
 var _handwrite2 = _interopRequireDefault(_handwrite);
 
-TweenLite.defaultEase = Power2.easeInOut;
+TweenLite.defaultEase = Power2.easeOut;
 
 function writer(points) {
     var image = document.getElementById("cta_O");
@@ -1909,7 +1909,7 @@ function do_arrow_green_2a() {
 function do_cta() {
     // TweenMax.to(".frame1", 1, {x:-600})
     TweenMax.set('#cta_circle', { opacity: 1 });
-    (0, _commonJsProline.hand)(_cta_circle.cta_circle, "cta_circle", { brushsize: 8, speed: 1, cleanFromBehind: false }).then(function () {
+    (0, _commonJsProline.hand)(_cta_circle.cta_circle, "cta_circle", { brushsize: 8, speed: 1, cleanFromBehind: false, cleanUpWhenDone: false }).then(function () {
         void 0;
     });
 }
