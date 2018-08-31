@@ -25,5 +25,6 @@ function start(){
     
     tl.to('#t1', .3, {opacity:0}, '+=2.5')
     tl.from('#t2', .3, {opacity:0})
+    tl.from('#t3', .3, {opacity:0}, "+=.6")
     tl.from('#footer', .3, {opacity:0}, "+=.5")
 }
