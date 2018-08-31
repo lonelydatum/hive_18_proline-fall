@@ -36,3 +36,12 @@
 	opacity: 0;
 }
 
+
+#legalBtn{	
+	@include pos(7, 40);
+	opacity: 1;
+	width: 36px;
+	height: 25px;
+	background-color: red;
+	opacity: 0;
+}

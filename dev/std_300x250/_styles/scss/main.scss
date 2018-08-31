@@ -27,6 +27,17 @@
 	#cta_circle{ @include pos(61, 148); }
 }
 
+
+
+#legalBtn{	
+	@include pos(7, 198);
+	opacity: 1;
+	width: 36px;
+	height: 25px;
+	background-color: red;
+	opacity: 0;
+}
+
 #banner{	
 	width: 300px;
 	height: 250px;
