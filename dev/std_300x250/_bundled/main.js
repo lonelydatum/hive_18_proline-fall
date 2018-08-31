@@ -13,7 +13,7 @@ var _handwrite = require('handwrite');
 
 var _handwrite2 = _interopRequireDefault(_handwrite);
 
-TweenLite.defaultEase = Power3.easeInOut;
+TweenLite.defaultEase = Power2.easeInOut;
 
 function writer(points) {
     var image = document.getElementById("cta_O");
@@ -125,7 +125,17 @@ exports.masker = masker;
 exports.arrayClean = arrayClean;
 exports.hand = hand;
 
-},{"handwrite":8}],2:[function(require,module,exports){
+},{"handwrite":10}],2:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var arrow_green_1 = [{ "x": 5, "y": 61 }, { "x": 6, "y": 61 }, { "x": 7, "y": 60 }, { "x": 8, "y": 60 }, { "x": 9, "y": 59 }, { "x": 10, "y": 59 }, { "x": 12, "y": 58 }, { "x": 14, "y": 56 }, { "x": 16, "y": 55 }, { "x": 19, "y": 54 }, { "x": 21, "y": 53 }, { "x": 23, "y": 52 }, { "x": 26, "y": 51 }, { "x": 28, "y": 50 }, { "x": 30, "y": 49 }, { "x": 32, "y": 49 }, { "x": 35, "y": 48 }, { "x": 36, "y": 47 }, { "x": 38, "y": 46 }, { "x": 40, "y": 45 }, { "x": 42, "y": 45 }, { "x": 43, "y": 44 }, { "x": 45, "y": 44 }, { "x": 46, "y": 43 }, { "x": 48, "y": 43 }, { "x": 50, "y": 42 }, { "x": 52, "y": 41 }, { "x": 53, "y": 41 }, { "x": 55, "y": 40 }, { "x": 56, "y": 40 }, { "x": 58, "y": 40 }, { "x": 61, "y": 39 }, { "x": 62, "y": 39 }, { "x": 63, "y": 39 }, { "x": 64, "y": 38 }, { "x": 65, "y": 38 }, { "x": 66, "y": 38 }, { "x": 67, "y": 38 }, { "x": 69, "y": 38 }, { "x": 71, "y": 38 }, { "x": 72, "y": 38 }, { "x": 72, "y": 37 }, { "x": 72, "y": 36 }, { "x": 5, "y": 61 }, { "x": 6, "y": 61 }, { "x": 7, "y": 60 }, { "x": 8, "y": 60 }, { "x": 9, "y": 59 }, { "x": 10, "y": 59 }, { "x": 12, "y": 58 }, { "x": 14, "y": 56 }, { "x": 16, "y": 55 }, { "x": 19, "y": 54 }, { "x": 21, "y": 53 }, { "x": 23, "y": 52 }, { "x": 26, "y": 51 }, { "x": 28, "y": 50 }, { "x": 30, "y": 49 }, { "x": 32, "y": 49 }, { "x": 35, "y": 48 }, { "x": 36, "y": 47 }, { "x": 38, "y": 46 }, { "x": 40, "y": 45 }, { "x": 42, "y": 45 }, { "x": 43, "y": 44 }, { "x": 45, "y": 44 }, { "x": 46, "y": 43 }, { "x": 48, "y": 43 }, { "x": 50, "y": 42 }, { "x": 52, "y": 41 }, { "x": 53, "y": 41 }, { "x": 55, "y": 40 }, { "x": 56, "y": 40 }, { "x": 58, "y": 40 }, { "x": 61, "y": 39 }, { "x": 62, "y": 39 }, { "x": 63, "y": 39 }, { "x": 64, "y": 38 }, { "x": 65, "y": 38 }, { "x": 66, "y": 38 }, { "x": 67, "y": 38 }, { "x": 69, "y": 38 }, { "x": 71, "y": 38 }, { "x": 72, "y": 38 }, { "x": 72, "y": 37 }, { "x": 72, "y": 36 }, { "x": 49, "y": 17 }, { "x": 50, "y": 17 }, { "x": 52, "y": 17 }, { "x": 55, "y": 18 }, { "x": 57, "y": 19 }, { "x": 59, "y": 19 }, { "x": 62, "y": 21 }, { "x": 64, "y": 22 }, { "x": 66, "y": 23 }, { "x": 68, "y": 24 }, { "x": 70, "y": 25 }, { "x": 72, "y": 26 }, { "x": 73, "y": 26 }, { "x": 75, "y": 27 }, { "x": 78, "y": 28 }, { "x": 81, "y": 29 }, { "x": 84, "y": 30 }, { "x": 85, "y": 31 }, { "x": 86, "y": 31 }, { "x": 88, "y": 32 }, { "x": 89, "y": 33 }, { "x": 90, "y": 33 }, { "x": 91, "y": 33 }, { "x": 90, "y": 33 }, { "x": 88, "y": 33 }, { "x": 86, "y": 34 }, { "x": 84, "y": 35 }, { "x": 82, "y": 35 }, { "x": 80, "y": 37 }, { "x": 77, "y": 38 }, { "x": 75, "y": 39 }, { "x": 72, "y": 41 }, { "x": 70, "y": 43 }, { "x": 66, "y": 45 }, { "x": 64, "y": 46 }, { "x": 63, "y": 48 }, { "x": 60, "y": 49 }, { "x": 59, "y": 50 }, { "x": 56, "y": 52 }, { "x": 54, "y": 53 }, { "x": 52, "y": 54 }, { "x": 51, "y": 55 }, { "x": 50, "y": 56 }, { "x": 50, "y": 55 }, { "x": 51, "y": 54 }, { "x": 52, "y": 53 }, { "x": 49, "y": 17 }, { "x": 50, "y": 17 }, { "x": 52, "y": 17 }, { "x": 55, "y": 18 }, { "x": 57, "y": 19 }, { "x": 59, "y": 19 }, { "x": 62, "y": 21 }, { "x": 64, "y": 22 }, { "x": 66, "y": 23 }, { "x": 68, "y": 24 }, { "x": 70, "y": 25 }, { "x": 72, "y": 26 }, { "x": 73, "y": 26 }, { "x": 75, "y": 27 }, { "x": 78, "y": 28 }, { "x": 81, "y": 29 }, { "x": 84, "y": 30 }, { "x": 85, "y": 31 }, { "x": 86, "y": 31 }, { "x": 88, "y": 32 }, { "x": 89, "y": 33 }, { "x": 90, "y": 33 }, { "x": 91, "y": 33 }, { "x": 90, "y": 33 }, { "x": 88, "y": 33 }, { "x": 86, "y": 34 }, { "x": 84, "y": 35 }, { "x": 82, "y": 35 }, { "x": 80, "y": 37 }, { "x": 77, "y": 38 }, { "x": 75, "y": 39 }, { "x": 72, "y": 41 }, { "x": 70, "y": 43 }, { "x": 66, "y": 45 }, { "x": 64, "y": 46 }, { "x": 63, "y": 48 }, { "x": 60, "y": 49 }, { "x": 59, "y": 50 }, { "x": 56, "y": 52 }, { "x": 54, "y": 53 }, { "x": 52, "y": 54 }, { "x": 51, "y": 55 }, { "x": 50, "y": 56 }, { "x": 50, "y": 55 }, { "x": 51, "y": 54 }, { "x": 52, "y": 53 }, { "x": 115, "y": 28 }, { "x": 114, "y": 28 }, { "x": 112, "y": 28 }, { "x": 111, "y": 28 }, { "x": 109, "y": 28 }, { "x": 108, "y": 28 }, { "x": 106, "y": 28 }, { "x": 105, "y": 29 }, { "x": 104, "y": 29 }, { "x": 103, "y": 30 }, { "x": 102, "y": 31 }, { "x": 102, "y": 32 }, { "x": 101, "y": 33 }, { "x": 101, "y": 34 }, { "x": 101, "y": 35 }, { "x": 101, "y": 36 }, { "x": 101, "y": 37 }, { "x": 102, "y": 38 }, { "x": 103, "y": 39 }, { "x": 105, "y": 40 }, { "x": 106, "y": 41 }, { "x": 109, "y": 41 }, { "x": 110, "y": 41 }, { "x": 112, "y": 41 }, { "x": 115, "y": 41 }, { "x": 116, "y": 40 }, { "x": 117, "y": 40 }, { "x": 118, "y": 39 }, { "x": 118, "y": 38 }, { "x": 118, "y": 37 }, { "x": 118, "y": 35 }, { "x": 118, "y": 34 }, { "x": 118, "y": 33 }, { "x": 117, "y": 32 }, { "x": 116, "y": 31 }, { "x": 115, "y": 31 }, { "x": 114, "y": 30 }, { "x": 113, "y": 30 }, { "x": 111, "y": 30 }, { "x": 110, "y": 30 }, { "x": 115, "y": 28 }, { "x": 114, "y": 28 }, { "x": 112, "y": 28 }, { "x": 111, "y": 28 }, { "x": 109, "y": 28 }, { "x": 108, "y": 28 }, { "x": 106, "y": 28 }, { "x": 105, "y": 29 }, { "x": 104, "y": 29 }, { "x": 103, "y": 30 }, { "x": 102, "y": 31 }, { "x": 102, "y": 32 }, { "x": 101, "y": 33 }, { "x": 101, "y": 34 }, { "x": 101, "y": 35 }, { "x": 101, "y": 36 }, { "x": 101, "y": 37 }, { "x": 102, "y": 38 }, { "x": 103, "y": 39 }, { "x": 105, "y": 40 }, { "x": 106, "y": 41 }, { "x": 109, "y": 41 }, { "x": 110, "y": 41 }, { "x": 112, "y": 41 }, { "x": 115, "y": 41 }, { "x": 116, "y": 40 }, { "x": 117, "y": 40 }, { "x": 118, "y": 39 }, { "x": 118, "y": 38 }, { "x": 118, "y": 37 }, { "x": 118, "y": 35 }, { "x": 118, "y": 34 }, { "x": 118, "y": 33 }, { "x": 117, "y": 32 }, { "x": 116, "y": 31 }, { "x": 115, "y": 31 }, { "x": 114, "y": 30 }, { "x": 113, "y": 30 }, { "x": 111, "y": 30 }, { "x": 110, "y": 30 }];
+
+exports.arrow_green_1 = arrow_green_1;
+
+},{}],3:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -384,7 +394,7 @@ var arrow_green_2a = [{
 
 exports.arrow_green_2a = arrow_green_2a;
 
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -802,7 +812,17 @@ var arrow_yellow_1 = [{
 
 exports.arrow_yellow_1 = arrow_yellow_1;
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var cta_circle = [{ "x": 14, "y": 33 }, { "x": 14, "y": 32 }, { "x": 14, "y": 31 }, { "x": 15, "y": 30 }, { "x": 17, "y": 29 }, { "x": 22, "y": 26 }, { "x": 27, "y": 25 }, { "x": 31, "y": 24 }, { "x": 37, "y": 22 }, { "x": 41, "y": 21 }, { "x": 45, "y": 21 }, { "x": 50, "y": 20 }, { "x": 54, "y": 19 }, { "x": 62, "y": 18 }, { "x": 67, "y": 18 }, { "x": 74, "y": 17 }, { "x": 82, "y": 17 }, { "x": 94, "y": 16 }, { "x": 99, "y": 16 }, { "x": 104, "y": 16 }, { "x": 108, "y": 16 }, { "x": 112, "y": 16 }, { "x": 120, "y": 16 }, { "x": 125, "y": 16 }, { "x": 130, "y": 16 }, { "x": 135, "y": 16 }, { "x": 141, "y": 16 }, { "x": 146, "y": 17 }, { "x": 149, "y": 18 }, { "x": 153, "y": 19 }, { "x": 156, "y": 20 }, { "x": 161, "y": 22 }, { "x": 164, "y": 24 }, { "x": 167, "y": 25 }, { "x": 169, "y": 27 }, { "x": 171, "y": 30 }, { "x": 171, "y": 31 }, { "x": 172, "y": 32 }, { "x": 172, "y": 34 }, { "x": 172, "y": 35 }, { "x": 172, "y": 37 }, { "x": 170, "y": 39 }, { "x": 167, "y": 40 }, { "x": 164, "y": 42 }, { "x": 159, "y": 44 }, { "x": 156, "y": 45 }, { "x": 153, "y": 46 }, { "x": 149, "y": 47 }, { "x": 143, "y": 48 }, { "x": 137, "y": 49 }, { "x": 132, "y": 50 }, { "x": 125, "y": 51 }, { "x": 118, "y": 51 }, { "x": 106, "y": 53 }, { "x": 98, "y": 53 }, { "x": 90, "y": 54 }, { "x": 83, "y": 55 }, { "x": 75, "y": 55 }, { "x": 70, "y": 55 }, { "x": 65, "y": 55 }, { "x": 60, "y": 55 }, { "x": 56, "y": 55 }, { "x": 50, "y": 55 }, { "x": 46, "y": 55 }, { "x": 42, "y": 54 }, { "x": 39, "y": 54 }, { "x": 36, "y": 53 }, { "x": 33, "y": 52 }, { "x": 31, "y": 52 }, { "x": 29, "y": 52 }, { "x": 25, "y": 51 }, { "x": 21, "y": 50 }, { "x": 19, "y": 50 }, { "x": 17, "y": 49 }, { "x": 16, "y": 49 }, { "x": 16, "y": 48 }, { "x": 15, "y": 47 }, { "x": 14, "y": 47 }, { "x": 13, "y": 46 }, { "x": 12, "y": 46 }, { "x": 12, "y": 45 }, { "x": 11, "y": 45 }, { "x": 10, "y": 44 }, { "x": 10, "y": 43 }, { "x": 9, "y": 42 }, { "x": 9, "y": 43 }, { "x": 14, "y": 33 }, { "x": 14, "y": 32 }, { "x": 14, "y": 31 }, { "x": 15, "y": 30 }, { "x": 17, "y": 29 }, { "x": 22, "y": 26 }, { "x": 27, "y": 25 }, { "x": 31, "y": 24 }, { "x": 37, "y": 22 }, { "x": 41, "y": 21 }, { "x": 45, "y": 21 }, { "x": 50, "y": 20 }, { "x": 54, "y": 19 }, { "x": 62, "y": 18 }, { "x": 67, "y": 18 }, { "x": 74, "y": 17 }, { "x": 82, "y": 17 }, { "x": 94, "y": 16 }, { "x": 99, "y": 16 }, { "x": 104, "y": 16 }, { "x": 108, "y": 16 }, { "x": 112, "y": 16 }, { "x": 120, "y": 16 }, { "x": 125, "y": 16 }, { "x": 130, "y": 16 }, { "x": 135, "y": 16 }, { "x": 141, "y": 16 }, { "x": 146, "y": 17 }, { "x": 149, "y": 18 }, { "x": 153, "y": 19 }, { "x": 156, "y": 20 }, { "x": 161, "y": 22 }, { "x": 164, "y": 24 }, { "x": 167, "y": 25 }, { "x": 169, "y": 27 }, { "x": 171, "y": 30 }, { "x": 171, "y": 31 }, { "x": 172, "y": 32 }, { "x": 172, "y": 34 }, { "x": 172, "y": 35 }, { "x": 172, "y": 37 }, { "x": 170, "y": 39 }, { "x": 167, "y": 40 }, { "x": 164, "y": 42 }, { "x": 159, "y": 44 }, { "x": 156, "y": 45 }, { "x": 153, "y": 46 }, { "x": 149, "y": 47 }, { "x": 143, "y": 48 }, { "x": 137, "y": 49 }, { "x": 132, "y": 50 }, { "x": 125, "y": 51 }, { "x": 118, "y": 51 }, { "x": 106, "y": 53 }, { "x": 98, "y": 53 }, { "x": 90, "y": 54 }, { "x": 83, "y": 55 }, { "x": 75, "y": 55 }, { "x": 70, "y": 55 }, { "x": 65, "y": 55 }, { "x": 60, "y": 55 }, { "x": 56, "y": 55 }, { "x": 50, "y": 55 }, { "x": 46, "y": 55 }, { "x": 42, "y": 54 }, { "x": 39, "y": 54 }, { "x": 36, "y": 53 }, { "x": 33, "y": 52 }, { "x": 31, "y": 52 }, { "x": 29, "y": 52 }, { "x": 25, "y": 51 }, { "x": 21, "y": 50 }, { "x": 19, "y": 50 }, { "x": 17, "y": 49 }, { "x": 16, "y": 49 }, { "x": 16, "y": 48 }, { "x": 15, "y": 47 }, { "x": 14, "y": 47 }, { "x": 13, "y": 46 }, { "x": 12, "y": 46 }, { "x": 12, "y": 45 }, { "x": 11, "y": 45 }, { "x": 10, "y": 44 }, { "x": 10, "y": 43 }, { "x": 9, "y": 42 }, { "x": 9, "y": 43 }, { "x": 14, "y": 33 }, { "x": 14, "y": 32 }, { "x": 14, "y": 31 }, { "x": 15, "y": 30 }, { "x": 17, "y": 29 }, { "x": 22, "y": 26 }, { "x": 27, "y": 25 }, { "x": 31, "y": 24 }, { "x": 37, "y": 22 }, { "x": 41, "y": 21 }, { "x": 45, "y": 21 }, { "x": 50, "y": 20 }, { "x": 54, "y": 19 }, { "x": 62, "y": 18 }, { "x": 67, "y": 18 }, { "x": 74, "y": 17 }, { "x": 82, "y": 17 }, { "x": 94, "y": 16 }, { "x": 99, "y": 16 }, { "x": 104, "y": 16 }, { "x": 108, "y": 16 }, { "x": 112, "y": 16 }, { "x": 120, "y": 16 }, { "x": 125, "y": 16 }, { "x": 130, "y": 16 }, { "x": 135, "y": 16 }, { "x": 141, "y": 16 }, { "x": 146, "y": 17 }, { "x": 149, "y": 18 }, { "x": 153, "y": 19 }, { "x": 156, "y": 20 }, { "x": 161, "y": 22 }, { "x": 164, "y": 24 }, { "x": 167, "y": 25 }, { "x": 169, "y": 27 }, { "x": 171, "y": 30 }, { "x": 171, "y": 31 }, { "x": 172, "y": 32 }, { "x": 172, "y": 34 }, { "x": 172, "y": 35 }, { "x": 172, "y": 37 }, { "x": 170, "y": 39 }, { "x": 167, "y": 40 }, { "x": 164, "y": 42 }, { "x": 159, "y": 44 }, { "x": 156, "y": 45 }, { "x": 153, "y": 46 }, { "x": 149, "y": 47 }, { "x": 143, "y": 48 }, { "x": 137, "y": 49 }, { "x": 132, "y": 50 }, { "x": 125, "y": 51 }, { "x": 118, "y": 51 }, { "x": 106, "y": 53 }, { "x": 98, "y": 53 }, { "x": 90, "y": 54 }, { "x": 83, "y": 55 }, { "x": 75, "y": 55 }, { "x": 70, "y": 55 }, { "x": 65, "y": 55 }, { "x": 60, "y": 55 }, { "x": 56, "y": 55 }, { "x": 50, "y": 55 }, { "x": 46, "y": 55 }, { "x": 42, "y": 54 }, { "x": 39, "y": 54 }, { "x": 36, "y": 53 }, { "x": 33, "y": 52 }, { "x": 31, "y": 52 }, { "x": 29, "y": 52 }, { "x": 25, "y": 51 }, { "x": 21, "y": 50 }, { "x": 19, "y": 50 }, { "x": 17, "y": 49 }, { "x": 16, "y": 49 }, { "x": 16, "y": 48 }, { "x": 15, "y": 47 }, { "x": 14, "y": 47 }, { "x": 13, "y": 46 }, { "x": 12, "y": 46 }, { "x": 12, "y": 45 }, { "x": 11, "y": 45 }, { "x": 10, "y": 44 }, { "x": 10, "y": 43 }, { "x": 9, "y": 42 }, { "x": 9, "y": 43 }];
+
+exports.cta_circle = cta_circle;
+
+},{}],6:[function(require,module,exports){
 "use strict";
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
@@ -812,6 +832,8 @@ var _commonJsProline = require("../../_common/js/proline");
 var _handwrite = require('handwrite');
 
 var _handwrite2 = _interopRequireDefault(_handwrite);
+
+var _arrow_green_1 = require("./arrow_green_1");
 
 var _super1 = require("./super1");
 
@@ -823,14 +845,21 @@ var _arrow_yellow_1 = require("./arrow_yellow_1");
 
 var _arrow_green_2a = require("./arrow_green_2a");
 
-console.log((0, _commonJsProline.arrayClean)(_arrow_green_2a.arrow_green_2a, 2));
+var _cta_circle = require("./cta_circle");
+
+console.log(_cta_circle.cta_circle);
 
 setTimeout(function () {
     start();
 }, 500);
 
 function start() {
-    do_arrow_green_2a();
+    do_arrow_green();
+}
+
+function do_arrow_green() {
+    TweenMax.set('#super1', { opacity: 1 });
+    (0, _commonJsProline.hand)(_super1.hand_super1, "super1", { brushsize: 8, speed: 7 }).then(do_super2);
 }
 
 function do_super1() {
@@ -849,26 +878,53 @@ function do_super3() {
 }
 
 function do_arrow_yellow_1() {
-    TweenMax.set('#arrow_yellow_1', { opacity: 1 });
-    (0, _commonJsProline.hand)(_arrow_yellow_1.arrow_yellow_1, "arrow_yellow_1", { brushsize: 5, speed: 7 });
+    TweenMax.to('.pan', 2, { x: -300 });
+    TweenLite.delayedCall(.7, function () {
+        TweenMax.set('#arrow_yellow_1', { opacity: 1 });
+        (0, _commonJsProline.hand)(_arrow_yellow_1.arrow_yellow_1, "arrow_yellow_1", { brushsize: 5, speed: 8 }).then(do_arrow_green_2a);
+    });
 }
 
 function do_arrow_green_2a() {
     // TweenMax.set('#arrow_green_2a', {opacity:1})
+    TweenMax.set(".masker", { opacity: 1 });
 
-    var tl = new TimelineMax();
+    var tl = new TimelineMax({
+        onComplete: do_cta
+    });
 
     var _masker = (0, _commonJsProline.masker)();
 
     var arrow_green_2a = _masker.arrow_green_2a;
+    var arrow_green_2b = _masker.arrow_green_2b;
+    var arrow_green_2c = _masker.arrow_green_2c;
+    var arrow_green_2d = _masker.arrow_green_2d;
+    var arrow_green_2e = _masker.arrow_green_2e;
 
-    console.log(arrow_green_2a);
-    tl.from(arrow_green_2a, 5, { clip: 0 + "px, " + arrow_green_2a.width + "px, " + 0 + "px, " + arrow_green_2a.width + "px" });
+    tl.from(arrow_green_2a, .5, { clip: arrow_green_2a.height + "px, " + arrow_green_2a.width + "px, " + arrow_green_2a.height + "px, " + 0 + "px" });
+    tl.from(arrow_green_2b, .5, { clip: arrow_green_2b.height + "px, " + arrow_green_2b.width + "px, " + arrow_green_2b.height + "px, " + 0 + "px" }, "-=.2");
+    tl.from(arrow_green_2c, .5, { clip: arrow_green_2c.height + "px, " + arrow_green_2c.width + "px, " + arrow_green_2c.height + "px, " + arrow_green_2c.width + "px" }, "-=.3");
+    tl.from(arrow_green_2d, .5, { clip: 0 + "px, " + arrow_green_2d.width + "px, " + 0 + "px, " + 0 + "px" }, "-=.3");
+
+    tl.add("end");
+    tl.to('.pan', 2, { x: -600 }, "end");
+    tl.from(arrow_green_2e, .5, { clip: 0 + "px, " + arrow_green_2e.width + "px, " + 0 + "px, " + 0 + "px" }, "end+=.5");
+
+    tl.set(".frame2", { opacity: 1 });
+    tl.from("#logo_pro", .3, { opacity: 0 });
+    tl.from("#cta", .3, { opacity: 0 });
+    tl.from("#footer", .3, { opacity: 0 });
 
     // hand(arrow_green_2a, "arrow_green_2a", {brushsize:5, speed:9})
 }
 
-},{"../../_common/js/proline":1,"./arrow_green_2a":2,"./arrow_yellow_1":3,"./super1":5,"./super2":6,"./super3":7,"handwrite":8}],5:[function(require,module,exports){
+function do_cta() {
+    // TweenMax.to(".frame1", 1, {x:-600})
+    TweenMax.set('#cta_circle', { opacity: 1 });
+    (0, _commonJsProline.hand)(_cta_circle.cta_circle, "cta_circle", { brushsize: 5, speed: 5, cleanFromBehind: false }).then(function () {});
+}
+
+},{"../../_common/js/proline":1,"./arrow_green_1":2,"./arrow_green_2a":3,"./arrow_yellow_1":4,"./cta_circle":5,"./super1":7,"./super2":8,"./super3":9,"handwrite":10}],7:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1262,7 +1318,7 @@ var hand_super1 = [{
 
 exports.hand_super1 = hand_super1;
 
-},{}],6:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1637,7 +1693,7 @@ var hand_super2 = [{
 }];
 exports.hand_super2 = hand_super2;
 
-},{}],7:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1985,7 +2041,7 @@ var hand_super3 = [{
 }];
 exports.hand_super3 = hand_super3;
 
-},{}],8:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
@@ -2219,7 +2275,7 @@ exports.default = Handwrite;
 /******/ ]);
 });
 
-},{}]},{},[4])
+},{}]},{},[6])
 
 
 //# sourceMappingURL=main.js.map

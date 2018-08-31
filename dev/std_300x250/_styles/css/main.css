@@ -178,10 +178,76 @@ sup {
   position: absolute;
 }
 
+.frame1 #arrow_green_1 {
+  -webkit-transform: translate(-12px, -1px);
+  -ms-transform: translate(-12px, -1px);
+  transform: translate(-12px, -1px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
 .frame1 #arrow_green_2a {
-  -webkit-transform: translate(350px, 0px);
-  -ms-transform: translate(350px, 0px);
-  transform: translate(350px, 0px);
+  -webkit-transform: translate(350px, 178px);
+  -ms-transform: translate(350px, 178px);
+  transform: translate(350px, 178px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.frame1 #arrow_green_2b {
+  -webkit-transform: translate(428px, 152px);
+  -ms-transform: translate(428px, 152px);
+  transform: translate(428px, 152px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.frame1 #arrow_green_2c {
+  -webkit-transform: translate(490px, 155px);
+  -ms-transform: translate(490px, 155px);
+  transform: translate(490px, 155px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.frame1 #arrow_green_2d {
+  -webkit-transform: translate(524px, 0px);
+  -ms-transform: translate(524px, 0px);
+  transform: translate(524px, 0px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.frame1 #arrow_green_2e {
+  -webkit-transform: translate(508px, 112px);
+  -ms-transform: translate(508px, 112px);
+  transform: translate(508px, 112px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.frame2 #cta_circle {
+  -webkit-transform: translate(61px, 148px);
+  -ms-transform: translate(61px, 148px);
+  transform: translate(61px, 148px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -192,11 +258,11 @@ sup {
 #banner {
   font-size: 20px;
   color: #333;
-  width: 600px;
-  height: 700px;
+  width: 300px;
+  height: 250px;
 }
 
-.hand {
+.hand, .masker, .end {
   opacity: 0;
 }
 

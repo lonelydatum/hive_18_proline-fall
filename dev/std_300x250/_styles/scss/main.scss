@@ -17,21 +17,28 @@
 		@include pos(190, 53);		
 	}
 
-	#arrow_green_2a{
-		@include pos(350, 0);		
-	}
+	#arrow_green_1{ @include pos(-12, -1); }
+	#arrow_green_2a{ @include pos(350, 178); }
+	#arrow_green_2b{ @include pos(428, 152); }
+	#arrow_green_2c{ @include pos(490, 155); }
+	#arrow_green_2d{ @include pos(524, 0); }
+	#arrow_green_2e{ @include pos(508, 112); }
+	
 }
 
-
+.frame2{
+	// opacity: 1;
+	#cta_circle{ @include pos(61, 148); }
+}
 
 #banner{
 	font-size: 20px;
 	color: #333;
-	width: 600px;
-	height: 700px;
+	width: 300px;
+	height: 250px;
 }
 
-.hand{
+.hand, .masker, .end{
 	opacity: 0;
 }
 
