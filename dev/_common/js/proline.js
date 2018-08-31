@@ -14,7 +14,7 @@ function writer(points){
         speed: 5,
         brushSize: 5,
         repeat: 0,
-        cleanUpWhenDone: false,
+        cleanUpWhenDone: true,
         callback:()=>{
             // console.log('sdlkfjs')
         },

@@ -9,7 +9,7 @@ import { arrow_yellow_1 } from "./arrow_yellow_1";
 import { arrow_green_2a } from "./arrow_green_2a";
 import { cta_circle } from "./cta_circle";
 
-console.log(arrayClean(arrow_green_1, 2))
+// console.log(arrayClean(cta_circle, 3))
 
 
 
@@ -85,7 +85,7 @@ function do_arrow_green_2a(){
 function do_cta(){    
     // TweenMax.to(".frame1", 1, {x:-600})
     TweenMax.set('#cta_circle', {opacity:1})
-    hand(cta_circle, "cta_circle", {brushsize:5, speed:5, cleanFromBehind:false}).then(()=>{
-        
+    hand(cta_circle, "cta_circle", {brushsize:8, speed:1, cleanFromBehind:false}).then(()=>{
+        console.log('sldkfjskldfj')
     })
 }
