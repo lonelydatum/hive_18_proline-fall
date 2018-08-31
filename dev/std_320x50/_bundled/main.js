@@ -1835,6 +1835,8 @@ var _cta_circle = require("./cta_circle");
 
 // console.log(arrayClean(cta_circle, 3))
 
+TweenLite.defaultEase = Power3.easeInOut;
+
 start();
 
 function start() {

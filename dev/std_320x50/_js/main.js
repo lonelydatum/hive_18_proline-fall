@@ -12,6 +12,7 @@ import { cta_circle } from "./cta_circle";
 // console.log(arrayClean(cta_circle, 3))
 
 
+TweenLite.defaultEase = Power3.easeInOut
 
 start()
 
