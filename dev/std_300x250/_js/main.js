@@ -9,13 +9,13 @@ import { arrow_yellow_1 } from "./arrow_yellow_1";
 import { arrow_green_2a } from "./arrow_green_2a";
 import { cta_circle } from "./cta_circle";
 
-console.log(cta_circle)
+console.log(arrayClean(arrow_green_1, 2))
 
 
 
 setTimeout(()=>{    
     start()
-}, 500)
+}, 100)
 
 
 function start(){
@@ -24,8 +24,9 @@ function start(){
 
 
 function do_arrow_green(){
-    TweenMax.set('#super1', {opacity:1})
-    hand(hand_super1, "super1", {brushsize:8, speed:7}).then(do_super2)
+    TweenMax.set('#arrow_green_1', {opacity:1})
+    do_super1()
+    // hand(arrow_green_1, "arrow_green_1", {brushsize:2, speed:7}).then(do_super2)
 }
 
 function do_super1(){
