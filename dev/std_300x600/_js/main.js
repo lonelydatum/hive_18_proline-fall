@@ -41,7 +41,11 @@ function do_super2(){
 
 function do_super3(){
     TweenMax.set('#super3', {opacity:1})
-    hand(hand_super3, "super3", {brushSize:5, speed:4}).then(do_arrow_green_2a)
+    hand(hand_super3, "super3", {brushSize:5, speed:4}).then( ()=>{
+        TweenLite.delayedCall(1, do_arrow_green_2a )
+    }
+        
+    )
 }
 
 
