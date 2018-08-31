@@ -1,5 +1,5 @@
 import Handwrite from 'handwrite'
-TweenLite.defaultEase = Power2.easeInOut
+TweenLite.defaultEase = Power2.easeOut
 
         
 function writer(points){

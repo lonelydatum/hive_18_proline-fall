@@ -1,0 +1,52 @@
+@import '../../../_common/styles/common.scss';
+
+
+
+.frame1 {
+	opacity: 1;
+
+
+	#f2{
+		@include pos(300, 0);		
+	}
+
+	#arrow_yellow_1{ @include pos(160, 470); }
+	#arrow_yellow_2{ @include pos(232, 59); }
+
+	#arrow_green_1{ @include pos(-12, -1); }
+	#arrow_green_2a{ @include pos(333, 358); }
+	#arrow_green_2b{ @include pos(418, 331); }
+	#arrow_green_2c{ @include pos(486, 333); }
+	#arrow_green_2d{ @include pos(517, 117); }
+	#arrow_green_2e{ @include pos(483, 327); }
+	
+}
+
+.frame2{
+	#cta_circle{ @include pos(61, 336); }
+}
+
+
+
+#legalBtn{	
+	@include pos(7, 538);
+	opacity: 1;
+	width: 36px;
+	height: 25px;
+	background-color: red;
+	opacity: 0;
+}
+
+#banner{	
+	width: 300px;
+	height: 600px;
+}
+
+.hand, .masker, .end{
+	opacity: 0;
+}
+
+#trace{
+	@include pos(600, 0);
+	
+}
