@@ -60,4 +60,36 @@ function arrayClean(points, amount){
 
 
 
-export {writer, masker, arrayClean}
+function hand(points, div, opt){
+    return new Promise( (good, bad)=>{
+        const myCanvas = document.querySelector(`#${div} canvas`);
+        const myImg = document.querySelector(`#${div} img`);
+        const options = {
+            
+            brushsize:8,
+            speed:8,
+            repeat:0,
+            cleanFromBehind:true,
+            cleanUpWhenDone:true,
+            ...opt,
+            callback: ()=>{
+                good()
+            }
+        }
+
+        console.log(myCanvas)
+        myCanvas.width = myImg.width
+        myCanvas.height = myImg.height
+
+        const handwrite = new Handwrite(myCanvas, myImg);
+        handwrite.draw(points, options);
+
+        TweenLite.set(myImg, {opacity:0})
+        
+    } )
+    
+}
+
+
+
+export {writer, masker, arrayClean, hand}
