@@ -75,10 +75,11 @@ function do_arrow_green_2a(){
     tl.from(arrow_green_2e, .55, {clip:`${0}px, ${0}px, ${arrow_green_2e.height}px, ${0}px`}, "end")
 
     
-    tl.from("#logo_pro", .3, {opacity:0}, "-=.5")
-    tl.from("#cta", .3, {opacity:0})
-    tl.from("#footer", .3, {opacity:0})
+    // tl.from("#logo_pro", .3, {opacity:0}, "-=.5")
+    // tl.from("#cta", .3, {opacity:0})
+    // tl.from("#footer", .3, {opacity:0})
 
+    tl.from(["#logo_pro", "#cta", "#footer"], .6, {opacity:0}, '-=.2')
 
 
     // hand(arrow_green_2a, "arrow_green_2a", {brushsize:5, speed:9})
