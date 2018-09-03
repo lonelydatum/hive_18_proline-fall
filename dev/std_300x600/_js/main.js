@@ -53,7 +53,7 @@ function do_super3(){
 
 function do_arrow_green_2a(){
     // TweenMax.set('#arrow_green_2a', {opacity:1})
-    TweenMax.to('.pan', 2, {x:-300})    
+    TweenMax.to('.pan', 1.2, {x:-300, ease:Power1.easeOut})    
     TweenMax.set(".masker", {opacity:1})
 
     const tl = new TimelineMax({
@@ -70,8 +70,8 @@ function do_arrow_green_2a(){
     tl.from(arrow_green_2d, .5, {clip:`${0}px, ${arrow_green_2d.width}px, ${0}px, ${0}px`}, "-=.2")
     
     tl.set(".frame2", {opacity:1})
-    tl.add("end", "+=.5")
-    tl.to('.pan', 1.2, {x:-600}, "end")
+    tl.add("end")
+    tl.to('.pan', 1, {x:-600, ease:Power1.easeOut}, "end")
     tl.from(arrow_green_2e, .55, {clip:`${0}px, ${0}px, ${arrow_green_2e.height}px, ${0}px`}, "end")
 
     
