@@ -19,7 +19,7 @@
 }
 
 #t2{
-	@include pos-scale(-22, -2, .5);	
+	@include pos-scale(-16, -2, .5);	
 }
 
 #phoneMain{
@@ -27,13 +27,13 @@
 		
 	#phone{
 		transform-origin: 0 0;
-		@include pos-scale(0, 0, .4);
+		@include pos-scale(10, 5, .33);
 		z-index: 0;
 		
 	}
 
 	#logo{
-		@include pos-scale(19, 36, .45);	
+		@include pos-scale(23, 36, .4);	
 	}
 
 }

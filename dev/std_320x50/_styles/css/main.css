@@ -202,9 +202,9 @@ sup {
 }
 
 #t2 {
-  -webkit-transform: translate(-22px, -2px) scale(0.5, 0.5);
-  -ms-transform: translate(-22px, -2px) scale(0.5, 0.5);
-  transform: translate(-22px, -2px) scale(0.5, 0.5);
+  -webkit-transform: translate(-16px, -2px) scale(0.5, 0.5);
+  -ms-transform: translate(-16px, -2px) scale(0.5, 0.5);
+  transform: translate(-16px, -2px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -227,9 +227,9 @@ sup {
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
-  -webkit-transform: translate(0px, 0px) scale(0.4, 0.4);
-  -ms-transform: translate(0px, 0px) scale(0.4, 0.4);
-  transform: translate(0px, 0px) scale(0.4, 0.4);
+  -webkit-transform: translate(10px, 5px) scale(0.33, 0.33);
+  -ms-transform: translate(10px, 5px) scale(0.33, 0.33);
+  transform: translate(10px, 5px) scale(0.33, 0.33);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -239,9 +239,9 @@ sup {
 }
 
 #phoneMain #logo {
-  -webkit-transform: translate(19px, 36px) scale(0.45, 0.45);
-  -ms-transform: translate(19px, 36px) scale(0.45, 0.45);
-  transform: translate(19px, 36px) scale(0.45, 0.45);
+  -webkit-transform: translate(23px, 36px) scale(0.4, 0.4);
+  -ms-transform: translate(23px, 36px) scale(0.4, 0.4);
+  transform: translate(23px, 36px) scale(0.4, 0.4);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
