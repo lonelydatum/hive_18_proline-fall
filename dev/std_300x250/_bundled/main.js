@@ -1878,7 +1878,7 @@ function do_arrow_yellow_1() {
     TweenLite.delayedCall(1, function () {
         TweenMax.to('.pan', 2, { x: -300, ease: Power2.easeOut });
         TweenMax.set('#arrow_yellow_1', { opacity: 1 });
-        (0, _commonJsProline.hand)(_arrow_yellow_1.arrow_yellow_1, "arrow_yellow_1", { brushsize: 5, speed: 5 }).then(do_arrow_green_2a);
+        (0, _commonJsProline.hand)(_arrow_yellow_1.arrow_yellow_1, "arrow_yellow_1", { brushsize: 5, speed: 10 }).then(do_arrow_green_2a);
     });
 }
 
@@ -1906,12 +1906,12 @@ function do_arrow_green_2a() {
     tl.set(".frame2", { opacity: 1 });
 
     tl.add("end", "+=.2");
-    tl.to('.pan', 2, { x: -600 }, "end");
-    tl.from(arrow_green_2e, 1, { clip: 0 + "px, " + arrow_green_2e.width + "px, " + 0 + "px, " + 0 + "px" }, "end");
+    tl.to('.pan', 1.2, { x: -600 }, "end");
+    tl.from(arrow_green_2e, .5, { clip: 0 + "px, " + 0 + "px, " + arrow_green_2e.height + "px, " + 0 + "px" }, "end");
 
-    tl.from("#logo_pro", .3, { opacity: 0 }, '-=.5');
-    tl.from("#cta", .3, { opacity: 0 });
-    tl.from("#footer", .3, { opacity: 0 });
+    tl.from(["#logo_pro", "#cta", "#footer"], .6, { opacity: 0 }, '-=.2');
+    // tl.from("#cta", .3, {opacity:0})
+    // tl.from("#footer", .3, {opacity:0})
 
     // hand(arrow_green_2a, "arrow_green_2a", {brushsize:5, speed:9})
 }

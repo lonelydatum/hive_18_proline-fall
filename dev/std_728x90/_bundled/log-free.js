@@ -1013,7 +1013,7 @@ function do_super() {
 
 function logo() {
 
-    TweenMax.to("#logo_pro", .5, { opacity: 1, onComplete: function onComplete() {
+    TweenMax.to("#logo_pro", .5, { opacity: 1, delay: .4, onComplete: function onComplete() {
             TweenLite.delayedCall(.3, do_arrow_green_2a);
         } });
 }
