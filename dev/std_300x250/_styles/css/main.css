@@ -207,9 +207,13 @@ sup {
 }
 
 .frame1 #arrow_green_1 {
-  -webkit-transform: translate(-12px, -1px);
-  -ms-transform: translate(-12px, -1px);
-  transform: translate(-12px, -1px);
+  position: absolute;
+}
+
+.frame1 #arrow_green_1 {
+  -webkit-transform: translate(-18px, -1px) scale(1) rotate(36deg);
+  -ms-transform: translate(-18px, -1px) scale(1) rotate(36deg);
+  transform: translate(-18px, -1px) scale(1) rotate(36deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -262,9 +266,9 @@ sup {
 }
 
 .frame1 #arrow_green_2e {
-  -webkit-transform: translate(508px, 112px);
-  -ms-transform: translate(508px, 112px);
-  transform: translate(508px, 112px);
+  -webkit-transform: translate(508px, 141px) scaleY(-1);
+  -ms-transform: translate(508px, 141px) scaleY(-1);
+  transform: translate(508px, 141px) scaleY(-1);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;

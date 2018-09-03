@@ -112,6 +112,8 @@ function hand(points, div, opt) {
         myCanvas.width = myImg.width;
         myCanvas.height = myImg.height;
 
+        void 0;
+
         var handwrite = new _handwrite2["default"](myCanvas, myImg);
         var holder = document.querySelector("#" + div);
 
@@ -1835,7 +1837,7 @@ var _cta_circle = require("./cta_circle");
 
 // console.log(arrayClean(cta_circle, 3))
 
-TweenLite.defaultEase = Power3.easeInOut;
+TweenLite.defaultEase = Power2.easeInOut;
 
 start();
 
@@ -1843,6 +1845,7 @@ function start() {
     var tl = new TimelineMax();
     tl.set(".frame1", { opacity: 1 }, '+=.3');
     tl.from('#t1', .3, { opacity: 0 });
+    tl.from('#phoneMain', .5, { y: 90 });
 
     tl.to('#t1', .3, { opacity: 0 }, '+=2.5');
     tl.from('#t2', .3, { opacity: 0 });

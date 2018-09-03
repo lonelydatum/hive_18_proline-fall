@@ -112,6 +112,8 @@ function hand(points, div, opt) {
         myCanvas.width = myImg.width;
         myCanvas.height = myImg.height;
 
+        console.log(options);
+
         var handwrite = new _handwrite2["default"](myCanvas, myImg);
         var holder = document.querySelector("#" + div);
 
@@ -1827,7 +1829,7 @@ var _arrow_green_2a = require("./arrow_green_2a");
 
 var _cta_circle = require("./cta_circle");
 
-console.log((0, _commonJsProline.arrayClean)(_super3.hand_super3, 3));
+console.log((0, _commonJsProline.arrayClean)(_super3.hand_super3, 1));
 
 setTimeout(function () {
     start();
@@ -1838,24 +1840,29 @@ function start() {
 }
 
 function do_arrow_green() {
-    TweenMax.set('#arrow_green_1', { opacity: 1 });
-    do_super1();
-    // hand(arrow_green_1, "arrow_green_1", {brushsize:2, speed:7}).then(do_super2)
+    var _masker = (0, _commonJsProline.masker)();
+
+    var arrow_green_1 = _masker.arrow_green_1;
+
+    TweenMax.set(arrow_green_1, { opacity: 1, clip: 0 + "px, " + 0 + "px, " + arrow_green_1.height + "px, " + 0 + "px" });
+    TweenMax.to(arrow_green_1, .3, { clip: 0 + "px, " + 92 + "px, " + arrow_green_1.height + "px, " + 0 + "px", onComplete: function onComplete() {
+            do_super1();
+        } });
 }
 
 function do_super1() {
     TweenMax.set('#super1', { opacity: 1 });
-    (0, _commonJsProline.hand)(_super1.hand_super1, "super1", { brushSize: 5, speed: 4 }).then(do_super2);
+    (0, _commonJsProline.hand)(_super1.hand_super1, "super1", { brushSize: 5, speed: 3 }).then(do_super2);
 }
 
 function do_super2() {
     TweenMax.set('#super2', { opacity: 1 });
-    (0, _commonJsProline.hand)(_super2.hand_super2, "super2", { brushSize: 5, speed: 4 }).then(do_super3);
+    (0, _commonJsProline.hand)(_super2.hand_super2, "super2", { brushSize: 5, speed: 1 }).then(do_super3);
 }
 
 function do_super3() {
     TweenMax.set('#super3', { opacity: 1 });
-    (0, _commonJsProline.hand)(_super3.hand_super3, "super3", { brushSize: 5, speed: 4 }).then(function () {
+    (0, _commonJsProline.hand)(_super3.hand_super3, "super3", { brushSize: 5, speed: 1 }).then(function () {
         TweenLite.delayedCall(1, do_arrow_green_2a);
     });
 }
@@ -1869,30 +1876,30 @@ function do_arrow_green_2a() {
         onComplete: do_cta
     });
 
-    var _masker = (0, _commonJsProline.masker)();
+    var _masker2 = (0, _commonJsProline.masker)();
 
-    var arrow_yellow_1 = _masker.arrow_yellow_1;
-    var arrow_yellow_2 = _masker.arrow_yellow_2;
-    var arrow_green_2a = _masker.arrow_green_2a;
-    var arrow_green_2b = _masker.arrow_green_2b;
-    var arrow_green_2c = _masker.arrow_green_2c;
-    var arrow_green_2d = _masker.arrow_green_2d;
-    var arrow_green_2e = _masker.arrow_green_2e;
+    var arrow_yellow_1 = _masker2.arrow_yellow_1;
+    var arrow_yellow_2 = _masker2.arrow_yellow_2;
+    var arrow_green_2a = _masker2.arrow_green_2a;
+    var arrow_green_2b = _masker2.arrow_green_2b;
+    var arrow_green_2c = _masker2.arrow_green_2c;
+    var arrow_green_2d = _masker2.arrow_green_2d;
+    var arrow_green_2e = _masker2.arrow_green_2e;
 
     tl.add("yellow", .2);
     tl.from(arrow_yellow_1, .7, { clip: 0 + "px, " + 0 + "px, " + arrow_yellow_1.height + "px, " + 0 + "px" }, 'yellow');
     tl.from(arrow_yellow_2, .5, { clip: 0 + "px, " + 0 + "px, " + arrow_yellow_2.height + "px, " + 0 + "px" }, 'yellow');
     tl.from(arrow_green_2a, .5, { clip: arrow_green_2a.height + "px, " + arrow_green_2a.width + "px, " + arrow_green_2a.height + "px, " + 0 + "px" });
-    tl.from(arrow_green_2b, .5, { clip: arrow_green_2b.height + "px, " + arrow_green_2b.width + "px, " + arrow_green_2b.height + "px, " + 0 + "px" }, "-=.4");
-    tl.from(arrow_green_2c, .5, { clip: arrow_green_2c.height + "px, " + arrow_green_2c.width + "px, " + arrow_green_2c.height + "px, " + arrow_green_2c.width + "px" }, "-=.4");
-    tl.from(arrow_green_2d, .5, { clip: 0 + "px, " + arrow_green_2d.width + "px, " + 0 + "px, " + 0 + "px" }, "-=.4");
-
-    tl.add("end", "+=.5");
-    tl.to('.pan', 2, { x: -600 }, "end");
-    tl.from(arrow_green_2e, .5, { clip: 0 + "px, " + arrow_green_2e.width + "px, " + 0 + "px, " + 0 + "px" }, "end+=.5");
+    tl.from(arrow_green_2b, .5, { clip: arrow_green_2b.height + "px, " + arrow_green_2b.width + "px, " + arrow_green_2b.height + "px, " + 0 + "px" }, "-=.2");
+    tl.from(arrow_green_2c, .5, { clip: arrow_green_2c.height + "px, " + arrow_green_2c.width + "px, " + arrow_green_2c.height + "px, " + arrow_green_2c.width + "px" }, "-=.2");
+    tl.from(arrow_green_2d, .5, { clip: 0 + "px, " + arrow_green_2d.width + "px, " + 0 + "px, " + 0 + "px" }, "-=.2");
 
     tl.set(".frame2", { opacity: 1 });
-    tl.from("#logo_pro", .3, { opacity: 0 });
+    tl.add("end", "+=.5");
+    tl.to('.pan', 1.2, { x: -600 }, "end");
+    tl.from(arrow_green_2e, .55, { clip: 0 + "px, " + 0 + "px, " + arrow_green_2e.height + "px, " + 0 + "px" }, "end");
+
+    tl.from("#logo_pro", .3, { opacity: 0 }, "-=.5");
     tl.from("#cta", .3, { opacity: 0 });
     tl.from("#footer", .3, { opacity: 0 });
 
@@ -1918,806 +1925,405 @@ var hand_super1 = [{
   "y": 235
 }, {
   "x": 47,
-  "y": 238
-}, {
-  "x": 47,
   "y": 241
-}, {
-  "x": 47,
-  "y": 245
 }, {
   "x": 47,
   "y": 248
 }, {
   "x": 47,
-  "y": 251
-}, {
-  "x": 47,
   "y": 255
 }, {
   "x": 47,
-  "y": 259
-}, {
-  "x": 47,
   "y": 262
-}, {
-  "x": 47,
-  "y": 235
 }, {
   "x": 47,
   "y": 238
 }, {
   "x": 47,
-  "y": 241
-}, {
-  "x": 47,
   "y": 245
-}, {
-  "x": 47,
-  "y": 248
 }, {
   "x": 47,
   "y": 251
 }, {
   "x": 47,
-  "y": 255
-}, {
-  "x": 47,
   "y": 259
-}, {
-  "x": 47,
-  "y": 262
 }, {
   "x": 64,
   "y": 237
 }, {
-  "x": 62,
-  "y": 240
-}, {
   "x": 57,
   "y": 244
 }, {
-  "x": 53,
-  "y": 247
-}, {
   "x": 50,
   "y": 249
-}, {
-  "x": 49,
-  "y": 251
 }, {
   "x": 63,
   "y": 239
 }, {
-  "x": 59,
-  "y": 242
-}, {
   "x": 54,
   "y": 246
-}, {
-  "x": 51,
-  "y": 249
 }, {
   "x": 50,
   "y": 251
 }, {
-  "x": 56,
-  "y": 249
-}, {
   "x": 58,
   "y": 253
-}, {
-  "x": 61,
-  "y": 256
 }, {
   "x": 65,
   "y": 259
 }, {
-  "x": 68,
-  "y": 263
-}, {
   "x": 56,
   "y": 249
-}, {
-  "x": 58,
-  "y": 253
 }, {
   "x": 61,
   "y": 256
 }, {
-  "x": 65,
-  "y": 259
-}, {
   "x": 68,
   "y": 263
-}, {
-  "x": 76,
-  "y": 239
 }, {
   "x": 76,
   "y": 245
 }, {
   "x": 76,
-  "y": 253
-}, {
-  "x": 76,
   "y": 259
 }, {
   "x": 76,
-  "y": 263
-}, {
-  "x": 76,
   "y": 264
-}, {
-  "x": 76,
-  "y": 241
 }, {
   "x": 76,
   "y": 249
 }, {
   "x": 76,
-  "y": 255
-}, {
-  "x": 76,
   "y": 260
-}, {
-  "x": 76,
-  "y": 264
 }, {
   "x": 78,
   "y": 236
-}, {
-  "x": 81,
-  "y": 241
 }, {
   "x": 86,
   "y": 248
 }, {
-  "x": 90,
-  "y": 253
-}, {
   "x": 94,
   "y": 256
 }, {
-  "x": 95,
-  "y": 259
-}, {
   "x": 96,
   "y": 261
-}, {
-  "x": 78,
-  "y": 238
 }, {
   "x": 83,
   "y": 244
 }, {
-  "x": 87,
-  "y": 249
-}, {
   "x": 92,
   "y": 255
-}, {
-  "x": 94,
-  "y": 257
 }, {
   "x": 96,
   "y": 259
 }, {
   "x": 95,
-  "y": 260
+  "y": 238
+}, {
+  "x": 94,
+  "y": 254
 }, {
   "x": 95,
   "y": 238
 }, {
   "x": 94,
-  "y": 246
-}, {
-  "x": 94,
   "y": 254
-}, {
-  "x": 94,
-  "y": 260
-}, {
-  "x": 95,
-  "y": 238
-}, {
-  "x": 94,
-  "y": 246
-}, {
-  "x": 94,
-  "y": 254
-}, {
-  "x": 94,
-  "y": 260
 }, {
   "x": 122,
   "y": 237
-}, {
-  "x": 119,
-  "y": 238
 }, {
   "x": 115,
   "y": 239
 }, {
-  "x": 113,
-  "y": 242
-}, {
   "x": 110,
   "y": 245
 }, {
   "x": 109,
-  "y": 248
-}, {
-  "x": 109,
   "y": 251
-}, {
-  "x": 109,
-  "y": 254
 }, {
   "x": 110,
   "y": 257
-}, {
-  "x": 114,
-  "y": 260
 }, {
   "x": 118,
   "y": 262
 }, {
-  "x": 121,
-  "y": 262
-}, {
   "x": 126,
   "y": 262
 }, {
-  "x": 129,
-  "y": 261
-}, {
   "x": 132,
   "y": 259
-}, {
-  "x": 133,
-  "y": 256
 }, {
   "x": 134,
   "y": 253
 }, {
   "x": 134,
-  "y": 250
-}, {
-  "x": 134,
   "y": 247
-}, {
-  "x": 132,
-  "y": 245
 }, {
   "x": 128,
   "y": 244
 }, {
-  "x": 126,
-  "y": 242
-}, {
   "x": 122,
   "y": 242
-}, {
-  "x": 123,
-  "y": 237
 }, {
   "x": 120,
   "y": 237
 }, {
-  "x": 116,
-  "y": 239
-}, {
   "x": 113,
   "y": 241
-}, {
-  "x": 111,
-  "y": 244
 }, {
   "x": 110,
   "y": 247
 }, {
   "x": 109,
-  "y": 250
-}, {
-  "x": 109,
   "y": 253
-}, {
-  "x": 109,
-  "y": 256
 }, {
   "x": 112,
   "y": 259
 }, {
-  "x": 117,
-  "y": 261
-}, {
   "x": 120,
-  "y": 262
-}, {
-  "x": 124,
   "y": 262
 }, {
   "x": 128,
   "y": 262
 }, {
-  "x": 131,
-  "y": 260
-}, {
   "x": 133,
   "y": 257
 }, {
-  "x": 133,
-  "y": 254
-}, {
   "x": 134,
   "y": 251
-}, {
-  "x": 134,
-  "y": 248
 }, {
   "x": 132,
   "y": 246
 }, {
-  "x": 129,
-  "y": 244
-}, {
   "x": 127,
   "y": 243
 }, {
-  "x": 123,
-  "y": 242
-}, {
   "x": 146,
   "y": 237
-}, {
-  "x": 147,
-  "y": 240
 }, {
   "x": 149,
   "y": 244
 }, {
-  "x": 152,
-  "y": 252
-}, {
   "x": 154,
   "y": 257
 }, {
-  "x": 155,
-  "y": 261
-}, {
   "x": 156,
   "y": 263
-}, {
-  "x": 156,
-  "y": 259
 }, {
   "x": 157,
   "y": 253
 }, {
-  "x": 158,
-  "y": 248
-}, {
   "x": 160,
   "y": 243
-}, {
-  "x": 160,
-  "y": 240
 }, {
   "x": 162,
   "y": 244
 }, {
-  "x": 163,
-  "y": 250
-}, {
   "x": 167,
   "y": 256
-}, {
-  "x": 170,
-  "y": 260
 }, {
   "x": 171,
   "y": 263
 }, {
-  "x": 171,
-  "y": 262
-}, {
   "x": 172,
   "y": 256
 }, {
-  "x": 174,
-  "y": 250
-}, {
   "x": 176,
   "y": 245
-}, {
-  "x": 179,
-  "y": 240
 }, {
   "x": 146,
   "y": 237
 }, {
-  "x": 147,
-  "y": 240
-}, {
   "x": 149,
   "y": 244
-}, {
-  "x": 152,
-  "y": 252
 }, {
   "x": 154,
   "y": 257
 }, {
-  "x": 155,
-  "y": 261
-}, {
   "x": 156,
   "y": 263
-}, {
-  "x": 156,
-  "y": 259
 }, {
   "x": 157,
   "y": 253
 }, {
-  "x": 158,
-  "y": 248
-}, {
   "x": 160,
   "y": 243
-}, {
-  "x": 160,
-  "y": 240
 }, {
   "x": 162,
   "y": 244
 }, {
-  "x": 163,
-  "y": 250
-}, {
   "x": 167,
   "y": 256
-}, {
-  "x": 170,
-  "y": 260
 }, {
   "x": 171,
   "y": 263
 }, {
-  "x": 171,
-  "y": 262
-}, {
   "x": 172,
   "y": 256
-}, {
-  "x": 174,
-  "y": 250
 }, {
   "x": 176,
   "y": 245
 }, {
-  "x": 179,
-  "y": 240
+  "x": 188,
+  "y": 237
+}, {
+  "x": 188,
+  "y": 251
+}, {
+  "x": 187,
+  "y": 262
 }, {
   "x": 188,
   "y": 237
 }, {
   "x": 188,
-  "y": 243
-}, {
-  "x": 188,
   "y": 251
-}, {
-  "x": 188,
-  "y": 258
 }, {
   "x": 187,
   "y": 262
-}, {
-  "x": 187,
-  "y": 265
-}, {
-  "x": 188,
-  "y": 237
-}, {
-  "x": 188,
-  "y": 243
-}, {
-  "x": 188,
-  "y": 251
-}, {
-  "x": 188,
-  "y": 258
-}, {
-  "x": 187,
-  "y": 262
-}, {
-  "x": 187,
-  "y": 265
 }, {
   "x": 201,
   "y": 236
 }, {
   "x": 201,
-  "y": 243
-}, {
-  "x": 201,
   "y": 252
-}, {
-  "x": 201,
-  "y": 259
 }, {
   "x": 201,
   "y": 263
 }, {
   "x": 201,
-  "y": 236
-}, {
-  "x": 201,
   "y": 243
 }, {
   "x": 201,
-  "y": 252
-}, {
-  "x": 201,
   "y": 259
-}, {
-  "x": 201,
-  "y": 263
 }, {
   "x": 203,
   "y": 237
 }, {
-  "x": 208,
-  "y": 244
-}, {
   "x": 214,
   "y": 249
-}, {
-  "x": 219,
-  "y": 255
 }, {
   "x": 223,
   "y": 260
 }, {
-  "x": 222,
-  "y": 259
-}, {
   "x": 204,
   "y": 239
-}, {
-  "x": 210,
-  "y": 246
 }, {
   "x": 216,
   "y": 251
 }, {
-  "x": 220,
-  "y": 257
-}, {
   "x": 223,
   "y": 261
-}, {
-  "x": 221,
-  "y": 257
 }, {
   "x": 218,
   "y": 233
 }, {
-  "x": 218,
-  "y": 240
-}, {
   "x": 217,
   "y": 249
 }, {
-  "x": 216,
-  "y": 256
-}, {
   "x": 215,
   "y": 259
-}, {
-  "x": 218,
-  "y": 229
 }, {
   "x": 218,
   "y": 235
 }, {
   "x": 217,
-  "y": 244
-}, {
-  "x": 217,
   "y": 253
-}, {
-  "x": 216,
-  "y": 258
 }, {
   "x": 215,
   "y": 258
 }, {
-  "x": 259,
-  "y": 241
-}, {
   "x": 257,
   "y": 239
 }, {
-  "x": 254,
-  "y": 238
-}, {
   "x": 251,
-  "y": 237
-}, {
-  "x": 248,
   "y": 237
 }, {
   "x": 244,
   "y": 237
 }, {
-  "x": 240,
-  "y": 237
-}, {
   "x": 236,
   "y": 239
-}, {
-  "x": 235,
-  "y": 241
 }, {
   "x": 233,
   "y": 243
 }, {
   "x": 233,
-  "y": 246
-}, {
-  "x": 233,
   "y": 249
-}, {
-  "x": 233,
-  "y": 253
 }, {
   "x": 234,
   "y": 256
 }, {
-  "x": 236,
-  "y": 258
-}, {
   "x": 238,
   "y": 260
 }, {
-  "x": 240,
-  "y": 262
-}, {
   "x": 243,
-  "y": 262
-}, {
-  "x": 246,
   "y": 262
 }, {
   "x": 249,
   "y": 262
 }, {
-  "x": 252,
-  "y": 261
-}, {
   "x": 254,
   "y": 260
-}, {
-  "x": 257,
-  "y": 258
 }, {
   "x": 259,
   "y": 256
 }, {
-  "x": 262,
-  "y": 255
-}, {
   "x": 261,
-  "y": 253
-}, {
-  "x": 258,
   "y": 253
 }, {
   "x": 254,
   "y": 252
 }, {
-  "x": 250,
-  "y": 252
-}, {
   "x": 246,
   "y": 252
-}, {
-  "x": 244,
-  "y": 253
 }, {
   "x": 258,
   "y": 241
 }, {
-  "x": 256,
-  "y": 239
-}, {
   "x": 253,
   "y": 238
 }, {
-  "x": 250,
-  "y": 237
-}, {
   "x": 246,
-  "y": 237
-}, {
-  "x": 243,
   "y": 237
 }, {
   "x": 239,
   "y": 238
 }, {
-  "x": 236,
-  "y": 240
-}, {
   "x": 234,
   "y": 241
 }, {
   "x": 233,
-  "y": 244
-}, {
-  "x": 233,
   "y": 247
-}, {
-  "x": 233,
-  "y": 251
 }, {
   "x": 234,
   "y": 254
 }, {
-  "x": 235,
-  "y": 257
-}, {
   "x": 236,
   "y": 259
 }, {
-  "x": 238,
-  "y": 261
-}, {
   "x": 241,
-  "y": 262
-}, {
-  "x": 244,
   "y": 262
 }, {
   "x": 247,
   "y": 262
 }, {
-  "x": 250,
-  "y": 262
-}, {
   "x": 253,
   "y": 261
-}, {
-  "x": 255,
-  "y": 259
 }, {
   "x": 258,
   "y": 258
 }, {
-  "x": 260,
-  "y": 256
-}, {
   "x": 262,
   "y": 254
-}, {
-  "x": 260,
-  "y": 253
 }, {
   "x": 257,
   "y": 253
 }, {
-  "x": 252,
-  "y": 252
-}, {
   "x": 249,
   "y": 252
-}, {
-  "x": 245,
-  "y": 252
 }];
+
 exports.hand_super1 = hand_super1;
 
 },{}],8:[function(require,module,exports){
@@ -3465,6 +3071,7 @@ var hand_super2 = [{
   "x": 185,
   "y": 298
 }];
+
 exports.hand_super2 = hand_super2;
 
 },{}],9:[function(require,module,exports){

@@ -36,6 +36,14 @@ $property: transform;
 }
 
 
+@mixin pos-flipY($x, $y, $s) {
+  @include prefix( translate($x + px, $y + px) scaleY($s) );
+  backface-visibility: hidden;
+    perspective: 1000px;
+  position: absolute;
+}
+
+
 
 
 

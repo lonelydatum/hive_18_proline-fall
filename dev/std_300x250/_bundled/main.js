@@ -112,6 +112,8 @@ function hand(points, div, opt) {
         myCanvas.width = myImg.width;
         myCanvas.height = myImg.height;
 
+        console.log(options);
+
         var handwrite = new _handwrite2["default"](myCanvas, myImg);
         var holder = document.querySelector("#" + div);
 
@@ -1841,12 +1843,19 @@ setTimeout(function () {
 
 function start() {
     do_arrow_green();
+    // do_super3()  
 }
 
 function do_arrow_green() {
-    TweenMax.set('#arrow_green_1', { opacity: 1 });
-    do_super1();
-    // hand(arrow_green_1, "arrow_green_1", {brushsize:2, speed:7}).then(do_super2)
+    var _masker = (0, _commonJsProline.masker)();
+
+    var arrow_green_1 = _masker.arrow_green_1;
+
+    console.log(arrow_green_1);
+    TweenMax.set(arrow_green_1, { opacity: 1, clip: 0 + "px, " + 0 + "px, " + arrow_green_1.height + "px, " + 0 + "px" });
+    TweenMax.to(arrow_green_1, .3, { clip: 0 + "px, " + 92 + "px, " + arrow_green_1.height + "px, " + 0 + "px", onComplete: function onComplete() {
+            do_super1();
+        } });
 }
 
 function do_super1() {
@@ -1867,7 +1876,7 @@ function do_super3() {
 function do_arrow_yellow_1() {
 
     TweenLite.delayedCall(1, function () {
-        TweenMax.to('.pan', 2, { x: -300 });
+        TweenMax.to('.pan', 2, { x: -300, ease: Power2.easeOut });
         TweenMax.set('#arrow_yellow_1', { opacity: 1 });
         (0, _commonJsProline.hand)(_arrow_yellow_1.arrow_yellow_1, "arrow_yellow_1", { brushsize: 5, speed: 5 }).then(do_arrow_green_2a);
     });
@@ -1881,25 +1890,26 @@ function do_arrow_green_2a() {
         onComplete: do_cta
     });
 
-    var _masker = (0, _commonJsProline.masker)();
+    var _masker2 = (0, _commonJsProline.masker)();
 
-    var arrow_green_2a = _masker.arrow_green_2a;
-    var arrow_green_2b = _masker.arrow_green_2b;
-    var arrow_green_2c = _masker.arrow_green_2c;
-    var arrow_green_2d = _masker.arrow_green_2d;
-    var arrow_green_2e = _masker.arrow_green_2e;
+    var arrow_green_2a = _masker2.arrow_green_2a;
+    var arrow_green_2b = _masker2.arrow_green_2b;
+    var arrow_green_2c = _masker2.arrow_green_2c;
+    var arrow_green_2d = _masker2.arrow_green_2d;
+    var arrow_green_2e = _masker2.arrow_green_2e;
 
     tl.from(arrow_green_2a, .5, { clip: arrow_green_2a.height + "px, " + arrow_green_2a.width + "px, " + arrow_green_2a.height + "px, " + 0 + "px" });
-    tl.from(arrow_green_2b, .5, { clip: arrow_green_2b.height + "px, " + arrow_green_2b.width + "px, " + arrow_green_2b.height + "px, " + 0 + "px" }, "-=.4");
-    tl.from(arrow_green_2c, .5, { clip: arrow_green_2c.height + "px, " + arrow_green_2c.width + "px, " + arrow_green_2c.height + "px, " + arrow_green_2c.width + "px" }, "-=.4");
-    tl.from(arrow_green_2d, .5, { clip: 0 + "px, " + arrow_green_2d.width + "px, " + 0 + "px, " + 0 + "px" }, "-=.4");
-
-    tl.add("end", "+=.5");
-    tl.to('.pan', 2, { x: -600 }, "end");
-    tl.from(arrow_green_2e, .5, { clip: 0 + "px, " + arrow_green_2e.width + "px, " + 0 + "px, " + 0 + "px" }, "end+=.5");
+    tl.from(arrow_green_2b, .5, { clip: arrow_green_2b.height + "px, " + arrow_green_2b.width + "px, " + arrow_green_2b.height + "px, " + 0 + "px" }, "-=.2");
+    tl.from(arrow_green_2c, .5, { clip: arrow_green_2c.height + "px, " + arrow_green_2c.width + "px, " + arrow_green_2c.height + "px, " + arrow_green_2c.width + "px" }, "-=.2");
+    tl.from(arrow_green_2d, .5, { clip: 0 + "px, " + arrow_green_2d.width + "px, " + 0 + "px, " + 0 + "px" }, "-=.2");
 
     tl.set(".frame2", { opacity: 1 });
-    tl.from("#logo_pro", .3, { opacity: 0 });
+
+    tl.add("end", "+=.2");
+    tl.to('.pan', 2, { x: -600 }, "end");
+    tl.from(arrow_green_2e, 1, { clip: 0 + "px, " + arrow_green_2e.width + "px, " + 0 + "px, " + 0 + "px" }, "end");
+
+    tl.from("#logo_pro", .3, { opacity: 0 }, '-=.5');
     tl.from("#cta", .3, { opacity: 0 });
     tl.from("#footer", .3, { opacity: 0 });
 

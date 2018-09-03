@@ -81,6 +81,8 @@ function hand(points, div, opt){
         myCanvas.width = myImg.width
         myCanvas.height = myImg.height
 
+        console.log(options)
+
         const handwrite = new Handwrite(myCanvas, myImg);
         const holder = document.querySelector(`#${div}`)
         

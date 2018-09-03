@@ -112,6 +112,8 @@ function hand(points, div, opt) {
         myCanvas.width = myImg.width;
         myCanvas.height = myImg.height;
 
+        console.log(options);
+
         var handwrite = new _handwrite2["default"](myCanvas, myImg);
         var holder = document.querySelector("#" + div);
 
@@ -980,6 +982,8 @@ exports.cta_circle = cta_circle;
 },{}],3:[function(require,module,exports){
 "use strict";
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var _commonJsProline = require("../../_common/js/proline");
@@ -992,7 +996,7 @@ var _super1 = require("./super1");
 
 var _cta_circle = require("./cta_circle");
 
-console.log((0, _commonJsProline.arrayClean)(_cta_circle.cta_circle, 3));
+TweenLite.defaultEase = Power2.easeOut;
 
 setTimeout(function () {
     start();
@@ -1004,7 +1008,14 @@ function start() {
 
 function do_super() {
     TweenMax.set('#super', { opacity: 1 });
-    (0, _commonJsProline.hand)(_super1.hand_super1, "super", { brushSize: 4, speed: 8 }).then(do_arrow_green_2a);
+    (0, _commonJsProline.hand)(_super1.hand_super1, "super", { brushSize: 4, speed: 6 }).then(logo);
+}
+
+function logo() {
+
+    TweenMax.to("#logo_pro", .5, { opacity: 1, onComplete: function onComplete() {
+            TweenLite.delayedCall(.3, do_arrow_green_2a);
+        } });
 }
 
 function do_arrow_green_2a() {
@@ -1023,21 +1034,24 @@ function do_arrow_green_2a() {
     var arrow_green_3 = _masker.arrow_green_3;
     var arrow_green_4 = _masker.arrow_green_4;
 
-    tl.from(arrow_yellow_1, .5, { clip: 0 + "px, " + 0 + "px, " + 0 + "px, " + 0 + "px" }, .7);
-    tl.from(arrow_green_1, .5, { clip: arrow_green_1.height + "px, " + arrow_green_1.width + "px, " + arrow_green_1.height + "px, " + 0 + "px" }, "-=.3");
-    tl.from(arrow_green_2, .5, { clip: arrow_green_2.height + "px, " + arrow_green_2.width + "px, " + arrow_green_2.height + "px, " + 0 + "px" }, "-=.4");
-    tl.from(arrow_green_3, .5, { clip: arrow_green_3.height + "px, " + arrow_green_3.width + "px, " + arrow_green_2.height + "px, " + arrow_green_2.width + "px" }, "-=.4");
+    TweenMax.set(arrow_green_1, { opacity: 0 });
+
+    tl.from(arrow_yellow_1, .5, { clip: 0 + "px, " + 0 + "px, " + 0 + "px, " + 0 + "px" }, '+=.2');
+
+    tl.from(arrow_green_2, .5, { clip: arrow_green_2.height + "px, " + arrow_green_2.width + "px, " + arrow_green_2.height + "px, " + 0 + "px" }, "-=.2");
+    tl.from(arrow_green_3, .5, { clip: arrow_green_3.height + "px, " + arrow_green_3.width + "px, " + arrow_green_2.height + "px, " + arrow_green_2.width + "px" }, "-=.2");
     tl.from(arrow_green_4, .5, { clip: 0 + "px, " + arrow_green_4.width + "px, " + 0 + "px, " + arrow_green_4.width + "px" }, "-=.4");
 
     tl.set(".frame2", { opacity: 1 });
-    tl.from("#logo_pro", .3, { opacity: 0 }, "+=.3");
 
-    tl.from("#footer", .3, { opacity: 0 });
-
-    tl.from("#cta", .5, { opacity: 0, onComplete: function onComplete() {
-            TweenMax.set('#cta_circle', { opacity: 1 });
-            (0, _commonJsProline.hand)(_cta_circle.cta_circle, "cta_circle", { brushSize: 8, speed: 1, cleanFromBehind: false, cleanUpWhenDone: false });
-        } }, "+=.1");
+    tl.from(["#cta", "#footer"], .5, { opacity: 0, onComplete: function onComplete() {
+            TweenMax.set(arrow_green_1, { opacity: 1 });
+            var clip = { clip: arrow_green_1.height + "px, " + arrow_green_1.width + "px, " + arrow_green_1.height + "px, " + 0 + "px" };
+            TweenMax.from(arrow_green_1, .5, _extends({}, clip, { onComplete: function onComplete() {
+                    TweenMax.set('#cta_circle', { opacity: 1 });
+                    (0, _commonJsProline.hand)(_cta_circle.cta_circle, "cta_circle", { brushSize: 8, speed: 1, cleanFromBehind: false, cleanUpWhenDone: false });
+                } }));
+        } }, "+=.5");
 
     // hand(arrow_green_2a, "arrow_green_2a", {brushsize:5, speed:9})
 }

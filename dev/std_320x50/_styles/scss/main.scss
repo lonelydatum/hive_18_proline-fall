@@ -18,3 +18,32 @@
 	height: 50px;
 }
 
+#t2{
+	@include pos-scale(15, 10, .5);	
+}
+
+#phoneMain{
+	@include pos(180, -15);
+		
+	#phone{
+		transform-origin: 0 0;
+		@include pos-scale(0, 0, .4);
+		z-index: 0;
+		
+	}
+
+	#logo{
+		@include pos-scale(19, 36, .45);	
+	}
+
+}
+
+
+.frame1{
+	// opacity:1;
+
+	#t1{
+		@include pos-scale(-21, 2, .5);
+		
+	}
+}

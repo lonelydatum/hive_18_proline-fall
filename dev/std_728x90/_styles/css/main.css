@@ -261,6 +261,10 @@ sup {
   position: absolute;
 }
 
+.frame1 #logo_pro {
+  opacity: 0;
+}
+
 .frame2 #cta_circle {
   -webkit-transform: translate(211px, 37px) scale(1, 1);
   -ms-transform: translate(211px, 37px) scale(1, 1);
