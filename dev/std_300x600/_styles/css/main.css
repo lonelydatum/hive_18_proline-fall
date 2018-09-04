@@ -180,6 +180,13 @@ sup {
   pointer-events: none;
 }
 
+#borderChalk {
+  z-index: 0;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
 .frame1 {
   opacity: 1;
 }

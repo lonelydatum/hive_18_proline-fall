@@ -1,6 +1,12 @@
 @import '../../../_common/styles/common.scss';
 
-
+#borderChalk{
+	// @include pos(0, 0);
+	z-index: 0;
+	top:0;
+	left:0;
+	position: fixed;
+}
 
 .frame1 {
 	opacity: 1;

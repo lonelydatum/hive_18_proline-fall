@@ -31,9 +31,9 @@ function do_arrow_green(){
         
     }})
 
-    TweenMax.from(arrow_green_1a, .5, {clip:`${arrow_green_1a.height}px, ${arrow_green_1a.width}px, ${arrow_green_1a.height}px, ${0}px`})
-    TweenMax.from(arrow_green_1b, .8, {clip:`${arrow_green_1b.height}px, ${arrow_green_1b.width}px, ${arrow_green_1b.height}px, ${0}px`})
-    TweenMax.from(arrow_green_1c, .9, {clip:`${arrow_green_1c.height}px, ${arrow_green_1c.width}px, ${arrow_green_1c.height}px, ${0}px`})
+    TweenMax.from(arrow_green_1a, .5, {delay:1.2, clip:`${arrow_green_1a.height}px, ${arrow_green_1a.width}px, ${arrow_green_1a.height}px, ${0}px`})
+    TweenMax.from(arrow_green_1b, .8, {delay:1.2, clip:`${arrow_green_1b.height}px, ${arrow_green_1b.width}px, ${arrow_green_1b.height}px, ${0}px`})
+    TweenMax.from(arrow_green_1c, .9, {delay:1.2, clip:`${arrow_green_1c.height}px, ${arrow_green_1c.width}px, ${arrow_green_1c.height}px, ${0}px`})
 
     do_super1()    
 }
