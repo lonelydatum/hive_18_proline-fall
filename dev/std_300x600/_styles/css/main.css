@@ -207,9 +207,9 @@ sup {
 }
 
 .frame1 #arrow_yellow_1 {
-  -webkit-transform: translate(160px, 470px);
-  -ms-transform: translate(160px, 470px);
-  transform: translate(160px, 470px);
+  -webkit-transform: translate(168px, 439px);
+  -ms-transform: translate(168px, 439px);
+  transform: translate(168px, 439px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -218,9 +218,42 @@ sup {
 }
 
 .frame1 #arrow_yellow_2 {
-  -webkit-transform: translate(232px, 59px);
-  -ms-transform: translate(232px, 59px);
-  transform: translate(232px, 59px);
+  -webkit-transform: translate(258px, 94px);
+  -ms-transform: translate(258px, 94px);
+  transform: translate(258px, 94px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.frame1 #arrow_green_1a {
+  -webkit-transform: translate(30px, 388px);
+  -ms-transform: translate(30px, 388px);
+  transform: translate(30px, 388px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.frame1 #arrow_green_1b {
+  -webkit-transform: translate(82px, 469px);
+  -ms-transform: translate(82px, 469px);
+  transform: translate(82px, 469px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.frame1 #arrow_green_1c {
+  -webkit-transform: translate(130px, 502px);
+  -ms-transform: translate(130px, 502px);
+  transform: translate(130px, 502px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -229,9 +262,9 @@ sup {
 }
 
 .frame1 #arrow_green_2a {
-  -webkit-transform: translate(333px, 358px);
-  -ms-transform: translate(333px, 358px);
-  transform: translate(333px, 358px);
+  -webkit-transform: translate(327px, 355px);
+  -ms-transform: translate(327px, 355px);
+  transform: translate(327px, 355px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -240,9 +273,9 @@ sup {
 }
 
 .frame1 #arrow_green_2b {
-  -webkit-transform: translate(418px, 331px);
-  -ms-transform: translate(418px, 331px);
-  transform: translate(418px, 331px);
+  -webkit-transform: translate(415px, 327px);
+  -ms-transform: translate(415px, 327px);
+  transform: translate(415px, 327px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -251,9 +284,9 @@ sup {
 }
 
 .frame1 #arrow_green_2c {
-  -webkit-transform: translate(486px, 333px);
-  -ms-transform: translate(486px, 333px);
-  transform: translate(486px, 333px);
+  -webkit-transform: translate(481px, 333px);
+  -ms-transform: translate(481px, 333px);
+  transform: translate(481px, 333px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -262,9 +295,9 @@ sup {
 }
 
 .frame1 #arrow_green_2d {
-  -webkit-transform: translate(517px, 117px);
-  -ms-transform: translate(517px, 117px);
-  transform: translate(517px, 117px);
+  -webkit-transform: translate(524px, 91px);
+  -ms-transform: translate(524px, 91px);
+  transform: translate(524px, 91px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -273,9 +306,64 @@ sup {
 }
 
 .frame1 #arrow_green_2e {
-  -webkit-transform: translate(483px, 327px);
-  -ms-transform: translate(483px, 327px);
-  transform: translate(483px, 327px);
+  -webkit-transform: translate(507px, 252px);
+  -ms-transform: translate(507px, 252px);
+  transform: translate(507px, 252px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.frame1 #arrow_green_3a {
+  -webkit-transform: translate(641px, 52px);
+  -ms-transform: translate(641px, 52px);
+  transform: translate(641px, 52px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.frame1 #arrow_green_3b {
+  -webkit-transform: translate(671px, 439px);
+  -ms-transform: translate(671px, 439px);
+  transform: translate(671px, 439px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.frame1 #arrow_yellow_3a {
+  -webkit-transform: translate(833px, 99px);
+  -ms-transform: translate(833px, 99px);
+  transform: translate(833px, 99px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.frame1 #arrow_yellow_3b {
+  -webkit-transform: translate(765px, 420px);
+  -ms-transform: translate(765px, 420px);
+  transform: translate(765px, 420px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.frame2 {
+  -webkit-transform: translate(600px, 0px);
+  -ms-transform: translate(600px, 0px);
+  transform: translate(600px, 0px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -320,9 +408,9 @@ sup {
 }
 
 #trace {
-  -webkit-transform: translate(600px, 0px);
-  -ms-transform: translate(600px, 0px);
-  transform: translate(600px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;

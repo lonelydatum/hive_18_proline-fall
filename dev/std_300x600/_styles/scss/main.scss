@@ -12,20 +12,34 @@
 
 	#arrow_green_1{ @include pos-scale-rotate(-12, 159, 1, 36); }
 
-	#arrow_yellow_1{ @include pos(160, 470); }
-	#arrow_yellow_2{ @include pos(232, 59); }
+	#arrow_yellow_1{ @include pos(168, 439); }
+	#arrow_yellow_2{ @include pos(258, 94); }
+
+	#arrow_green_1a{ @include pos(30, 388); }
+	#arrow_green_1b{ @include pos(82, 469); }
+	#arrow_green_1c{ @include pos(130, 502); }
+
+
 
 	// #arrow_green_1{ @include pos(-12, -1); }
-	#arrow_green_2a{ @include pos(333, 358); }
-	#arrow_green_2b{ @include pos(418, 331); }
-	#arrow_green_2c{ @include pos(486, 333); }
-	#arrow_green_2d{ @include pos(517, 117); }
-	#arrow_green_2e{ @include pos(483, 327); }
+	#arrow_green_2a{ @include pos(327, 355); }
+	#arrow_green_2b{ @include pos(415, 327); }
+	#arrow_green_2c{ @include pos(481, 333); }
+	#arrow_green_2d{ @include pos(524, 91); }
+	#arrow_green_2e{ @include pos(507, 252); }
+
+	#arrow_green_3a{ @include pos(641, 52); }
+	#arrow_green_3b{ @include pos(671, 439); }
+
+
+	#arrow_yellow_3a{ @include pos(833, 99); }
+	#arrow_yellow_3b{ @include pos(765, 420); }
 	
 }
 
 .frame2{
 	#cta_circle{ @include pos(61, 336); }
+	@include pos(600, 0);
 }
 
 
@@ -49,6 +63,6 @@
 }
 
 #trace{
-	@include pos(600, 0);
+	@include pos(0, 0);
 	
 }

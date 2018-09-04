@@ -53,15 +53,20 @@ function do_super3(){
 
 function do_arrow_green_2a(){
     // TweenMax.set('#arrow_green_2a', {opacity:1})
-    TweenMax.to('.pan', 1.2, {x:-300, ease:Power1.easeOut})    
+    TweenMax.to(['#panner', '#panBg'], 5, {x:-600, ease:Power1.easeOut})    
     TweenMax.set(".masker", {opacity:1})
 
     const tl = new TimelineMax({
         onComplete: do_cta
     })
-    const {arrow_yellow_1, arrow_yellow_2, arrow_green_2a, arrow_green_2b, arrow_green_2c, arrow_green_2d, arrow_green_2e} = masker()
+    const {arrow_yellow_3a, arrow_yellow_3b, arrow_green_3a, arrow_green_3b,  arrow_green_1a, arrow_green_1b, arrow_green_1c, arrow_yellow_1, arrow_yellow_2, arrow_green_2a, arrow_green_2b, arrow_green_2c, arrow_green_2d, arrow_green_2e} = masker()
     
     tl.add("yellow", .2)
+    tl.from(arrow_green_1a, .5, {clip:`${arrow_green_1a.height}px, ${arrow_green_1a.width}px, ${arrow_green_1a.height}px, ${0}px`})
+    tl.from(arrow_green_1b, .5, {clip:`${arrow_green_1b.height}px, ${arrow_green_1b.width}px, ${arrow_green_1b.height}px, ${0}px`})
+    tl.from(arrow_green_1c, .5, {clip:`${arrow_green_1c.height}px, ${arrow_green_1c.width}px, ${arrow_green_1c.height}px, ${0}px`})
+
+
     tl.from(arrow_yellow_1, .7, {clip:`${0}px, ${0}px, ${arrow_yellow_1.height}px, ${0}px`}, 'yellow')    
     tl.from(arrow_yellow_2, .5, {clip:`${0}px, ${0}px, ${arrow_yellow_2.height}px, ${0}px`}, 'yellow')    
     tl.from(arrow_green_2a, .5, {clip:`${arrow_green_2a.height}px, ${arrow_green_2a.width}px, ${arrow_green_2a.height}px, ${0}px`})
@@ -71,9 +76,12 @@ function do_arrow_green_2a(){
     
     tl.set(".frame2", {opacity:1})
     tl.add("end")
-    tl.to('.pan', 1, {x:-600, ease:Power1.easeOut}, "end")
+    
     tl.from(arrow_green_2e, .55, {clip:`${0}px, ${0}px, ${arrow_green_2e.height}px, ${0}px`}, "end")
-
+    tl.from(arrow_green_3a, .5, {clip:`${arrow_green_3a.height}px, ${arrow_green_3a.width}px, ${arrow_green_3a.height}px, ${0}px`}, "end")
+    tl.from(arrow_green_3b, .5, {clip:`${arrow_green_3b.height}px, ${arrow_green_3b.width}px, ${arrow_green_3b.height}px, ${0}px`}, "end")
+    tl.from(arrow_yellow_3a, .5, {clip:`${arrow_yellow_3a.height}px, ${arrow_yellow_3a.width}px, ${arrow_yellow_3a.height}px, ${0}px`}, "end")
+    tl.from(arrow_yellow_3b, .5, {clip:`${arrow_yellow_3b.height}px, ${arrow_yellow_3b.width}px, ${arrow_yellow_3b.height}px, ${0}px`}, "end")
     
     // tl.from("#logo_pro", .3, {opacity:0}, "-=.5")
     // tl.from("#cta", .3, {opacity:0})

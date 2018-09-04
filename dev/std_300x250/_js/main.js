@@ -25,12 +25,20 @@ function start(){
 
 
 function do_arrow_green(){
-    const {arrow_green_1} = masker()
+    const {arrow_green_1, arrow_green_1b, arrow_green_1c} = masker()
+
+    TweenMax.set([arrow_green_1, arrow_green_1b, arrow_green_1c], {opacity:1})
     
     TweenMax.set(arrow_green_1, {opacity:1, clip:`${0}px, ${0}px, ${arrow_green_1.height}px, ${0}px`})
     TweenMax.to(arrow_green_1, .3, {clip:`${0}px, ${92}px, ${arrow_green_1.height}px, ${0}px`, onComplete:()=>{
-        do_super1()    
+        
     }})
+
+    TweenMax.from(arrow_green_1b, .5, {clip:`${arrow_green_1b.height}px, ${arrow_green_1b.width}px, ${arrow_green_1b.height}px, ${0}px`})
+    TweenMax.from(arrow_green_1c, .5, {clip:`${arrow_green_1c.height}px, ${arrow_green_1c.width}px, ${arrow_green_1c.height}px, ${0}px`})
+    do_super1()    
+    console.log(arrow_green_1b);
+
     
 }
 
@@ -51,8 +59,8 @@ function do_super3(){
 
 function do_arrow_yellow_1(){
     
-    TweenLite.delayedCall(.5, ()=>{
-        TweenMax.to(['#panner', '#panBg'], 5, {x:-600, ease:Power1.easeOut})    
+    TweenLite.delayedCall(.3, ()=>{
+        TweenMax.to(['#panner', '#panBg'], 4, {x:-600, ease:Power1.easeOut})    
         TweenMax.set('#arrow_yellow_1', {opacity:1})
         hand(arrow_yellow_1, "arrow_yellow_1", {brushsize:5, speed:8}).then()
         do_arrow_green_2a()
@@ -68,11 +76,10 @@ function do_arrow_green_2a(){
         onComplete: do_cta
     })
     const {arrow_green_1b, arrow_green_1c, arrow_green_2a, arrow_green_2b, arrow_green_2c, arrow_green_2d, arrow_green_2e, arrow_green_2f, arrow_yellow_2} = masker()
-    console.log(arrow_green_1b, arrow_green_1c);
-    tl.from(arrow_green_1b, .5, {clip:`${arrow_green_1b.height}px, ${arrow_green_1b.width}px, ${arrow_green_1b.height}px, ${0}px`})
-    tl.from(arrow_green_1c, .5, {clip:`${arrow_green_1c.height}px, ${arrow_green_1c.width}px, ${arrow_green_1c.height}px, ${0}px`})
+    
+    
 
-    tl.from(arrow_green_2a, .5, {clip:`${arrow_green_2a.height}px, ${arrow_green_2a.width}px, ${arrow_green_2a.height}px, ${0}px`})
+    tl.from(arrow_green_2a, .5, {clip:`${arrow_green_2a.height}px, ${arrow_green_2a.width}px, ${arrow_green_2a.height}px, ${0}px`}, '+=.7')
     tl.from(arrow_green_2b, .5, {clip:`${arrow_green_2b.height}px, ${arrow_green_2b.width}px, ${arrow_green_2b.height}px, ${0}px`}, "-=.3")
     tl.from(arrow_green_2c, .5, {clip:`${arrow_green_2c.height}px, ${arrow_green_2c.width}px, ${arrow_green_2c.height}px, ${arrow_green_2c.width}px`}, "-=.3")
     tl.from(arrow_green_2d, .5, {clip:`${0}px, ${arrow_green_2d.width}px, ${0}px, ${0}px`}, "-=.3")

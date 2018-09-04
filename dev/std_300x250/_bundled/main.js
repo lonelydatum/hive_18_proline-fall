@@ -1850,11 +1850,18 @@ function do_arrow_green() {
     var _masker = (0, _commonJsProline.masker)();
 
     var arrow_green_1 = _masker.arrow_green_1;
+    var arrow_green_1b = _masker.arrow_green_1b;
+    var arrow_green_1c = _masker.arrow_green_1c;
+
+    TweenMax.set([arrow_green_1, arrow_green_1b, arrow_green_1c], { opacity: 1 });
 
     TweenMax.set(arrow_green_1, { opacity: 1, clip: 0 + "px, " + 0 + "px, " + arrow_green_1.height + "px, " + 0 + "px" });
-    TweenMax.to(arrow_green_1, .3, { clip: 0 + "px, " + 92 + "px, " + arrow_green_1.height + "px, " + 0 + "px", onComplete: function onComplete() {
-            do_super1();
-        } });
+    TweenMax.to(arrow_green_1, .3, { clip: 0 + "px, " + 92 + "px, " + arrow_green_1.height + "px, " + 0 + "px", onComplete: function onComplete() {} });
+
+    TweenMax.from(arrow_green_1b, .5, { clip: arrow_green_1b.height + "px, " + arrow_green_1b.width + "px, " + arrow_green_1b.height + "px, " + 0 + "px" });
+    TweenMax.from(arrow_green_1c, .5, { clip: arrow_green_1c.height + "px, " + arrow_green_1c.width + "px, " + arrow_green_1c.height + "px, " + 0 + "px" });
+    do_super1();
+    console.log(arrow_green_1b);
 }
 
 function do_super1() {
@@ -1874,8 +1881,8 @@ function do_super3() {
 
 function do_arrow_yellow_1() {
 
-    TweenLite.delayedCall(.5, function () {
-        TweenMax.to(['#panner', '#panBg'], 5, { x: -600, ease: Power1.easeOut });
+    TweenLite.delayedCall(.3, function () {
+        TweenMax.to(['#panner', '#panBg'], 4, { x: -600, ease: Power1.easeOut });
         TweenMax.set('#arrow_yellow_1', { opacity: 1 });
         (0, _commonJsProline.hand)(_arrow_yellow_1.arrow_yellow_1, "arrow_yellow_1", { brushsize: 5, speed: 8 }).then();
         do_arrow_green_2a();
@@ -1902,11 +1909,7 @@ function do_arrow_green_2a() {
     var arrow_green_2f = _masker2.arrow_green_2f;
     var arrow_yellow_2 = _masker2.arrow_yellow_2;
 
-    console.log(arrow_green_1b, arrow_green_1c);
-    tl.from(arrow_green_1b, .5, { clip: arrow_green_1b.height + "px, " + arrow_green_1b.width + "px, " + arrow_green_1b.height + "px, " + 0 + "px" });
-    tl.from(arrow_green_1c, .5, { clip: arrow_green_1c.height + "px, " + arrow_green_1c.width + "px, " + arrow_green_1c.height + "px, " + 0 + "px" });
-
-    tl.from(arrow_green_2a, .5, { clip: arrow_green_2a.height + "px, " + arrow_green_2a.width + "px, " + arrow_green_2a.height + "px, " + 0 + "px" });
+    tl.from(arrow_green_2a, .5, { clip: arrow_green_2a.height + "px, " + arrow_green_2a.width + "px, " + arrow_green_2a.height + "px, " + 0 + "px" }, '+=.7');
     tl.from(arrow_green_2b, .5, { clip: arrow_green_2b.height + "px, " + arrow_green_2b.width + "px, " + arrow_green_2b.height + "px, " + 0 + "px" }, "-=.3");
     tl.from(arrow_green_2c, .5, { clip: arrow_green_2c.height + "px, " + arrow_green_2c.width + "px, " + arrow_green_2c.height + "px, " + arrow_green_2c.width + "px" }, "-=.3");
     tl.from(arrow_green_2d, .5, { clip: 0 + "px, " + arrow_green_2d.width + "px, " + 0 + "px, " + 0 + "px" }, "-=.3");
