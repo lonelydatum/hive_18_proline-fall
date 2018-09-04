@@ -1875,10 +1875,10 @@ function do_super3() {
 
 function do_arrow_yellow_1() {
 
-    TweenLite.delayedCall(1, function () {
-        TweenMax.to('.pan', 2, { x: -300, ease: Power2.easeOut });
+    TweenLite.delayedCall(.5, function () {
+        TweenMax.to('.pan', 5, { x: -600, ease: Power1.easeOut });
         TweenMax.set('#arrow_yellow_1', { opacity: 1 });
-        (0, _commonJsProline.hand)(_arrow_yellow_1.arrow_yellow_1, "arrow_yellow_1", { brushsize: 5, speed: 10 }).then(do_arrow_green_2a);
+        (0, _commonJsProline.hand)(_arrow_yellow_1.arrow_yellow_1, "arrow_yellow_1", { brushsize: 5, speed: 8 }).then(do_arrow_green_2a);
     });
 }
 
@@ -1899,15 +1899,15 @@ function do_arrow_green_2a() {
     var arrow_green_2e = _masker2.arrow_green_2e;
 
     tl.from(arrow_green_2a, .5, { clip: arrow_green_2a.height + "px, " + arrow_green_2a.width + "px, " + arrow_green_2a.height + "px, " + 0 + "px" });
-    tl.from(arrow_green_2b, .5, { clip: arrow_green_2b.height + "px, " + arrow_green_2b.width + "px, " + arrow_green_2b.height + "px, " + 0 + "px" }, "-=.2");
-    tl.from(arrow_green_2c, .5, { clip: arrow_green_2c.height + "px, " + arrow_green_2c.width + "px, " + arrow_green_2c.height + "px, " + arrow_green_2c.width + "px" }, "-=.2");
-    tl.from(arrow_green_2d, .5, { clip: 0 + "px, " + arrow_green_2d.width + "px, " + 0 + "px, " + 0 + "px" }, "-=.2");
+    tl.from(arrow_green_2b, .5, { clip: arrow_green_2b.height + "px, " + arrow_green_2b.width + "px, " + arrow_green_2b.height + "px, " + 0 + "px" }, "-=.3");
+    tl.from(arrow_green_2c, .5, { clip: arrow_green_2c.height + "px, " + arrow_green_2c.width + "px, " + arrow_green_2c.height + "px, " + arrow_green_2c.width + "px" }, "-=.3");
+    tl.from(arrow_green_2d, .5, { clip: 0 + "px, " + arrow_green_2d.width + "px, " + 0 + "px, " + 0 + "px" }, "-=.3");
 
     tl.set(".frame2", { opacity: 1 });
 
     tl.add("end", "+=.2");
-    tl.to('.pan', 1.2, { x: -600 }, "end");
-    tl.from(arrow_green_2e, .5, { clip: 0 + "px, " + 0 + "px, " + arrow_green_2e.height + "px, " + 0 + "px" }, "end");
+    // tl.to('.pan', 1.2, {x:-600}, "end")
+    tl.from(arrow_green_2e, .5, { clip: 0 + "px, " + 0 + "px, " + arrow_green_2e.height + "px, " + 0 + "px" }, "end+=.7");
 
     tl.from(["#logo_pro", "#cta", "#footer"], .6, { opacity: 0 }, '-=.2');
     // tl.from("#cta", .3, {opacity:0})
@@ -1917,10 +1917,9 @@ function do_arrow_green_2a() {
 }
 
 function do_cta() {
-    // TweenMax.to(".frame1", 1, {x:-600})
-    TweenMax.set('#cta_circle', { opacity: 1 });
-    (0, _commonJsProline.hand)(_cta_circle.cta_circle, "cta_circle", { brushsize: 8, speed: 1, cleanFromBehind: false, cleanUpWhenDone: false }).then(function () {
-        void 0;
+    TweenLite.delayedCall(1, function () {
+        TweenMax.set('#cta_circle', { opacity: 1 });
+        (0, _commonJsProline.hand)(_cta_circle.cta_circle, "cta_circle", { brushsize: 8, speed: 1, cleanFromBehind: false, cleanUpWhenDone: false }).then(function () {});
     });
 }
 
