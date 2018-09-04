@@ -11,7 +11,7 @@
 	}
 
 	#arrow_yellow_1{
-		@include pos(190, 53);		
+		@include pos(210, 41);		
 	}
 
 	#arrow_green_1{
@@ -19,13 +19,19 @@
 		// clip: rect(0px,92px,70px,0px);
 		
 	}
-
+	
 	#arrow_green_1{ @include pos-scale-rotate(-18, -1, 1, 36); }
+	#arrow_green_1b{ @include pos(158, 203); }
+	#arrow_green_1c{ @include pos(243, 170); }
+
 	#arrow_green_2a{ @include pos(350, 178); }
 	#arrow_green_2b{ @include pos(428, 152); }
 	#arrow_green_2c{ @include pos(490, 155); }
-	#arrow_green_2d{ @include pos(524, 0); }
-	#arrow_green_2e{ @include pos-flipY(508, 141, -1); }
+	#arrow_green_2d{ @include pos(508, 0); }
+	#arrow_green_2e{ @include pos(531, 124); }
+	#arrow_green_2f{ @include pos(777, 213); }
+
+	#arrow_yellow_2{ @include pos(707, 0); }
 	
 }
 

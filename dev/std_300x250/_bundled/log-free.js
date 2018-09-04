@@ -1851,7 +1851,6 @@ function do_arrow_green() {
 
     var arrow_green_1 = _masker.arrow_green_1;
 
-    void 0;
     TweenMax.set(arrow_green_1, { opacity: 1, clip: 0 + "px, " + 0 + "px, " + arrow_green_1.height + "px, " + 0 + "px" });
     TweenMax.to(arrow_green_1, .3, { clip: 0 + "px, " + 92 + "px, " + arrow_green_1.height + "px, " + 0 + "px", onComplete: function onComplete() {
             do_super1();
@@ -1878,7 +1877,8 @@ function do_arrow_yellow_1() {
     TweenLite.delayedCall(.5, function () {
         TweenMax.to(['#panner', '#panBg'], 5, { x: -600, ease: Power1.easeOut });
         TweenMax.set('#arrow_yellow_1', { opacity: 1 });
-        (0, _commonJsProline.hand)(_arrow_yellow_1.arrow_yellow_1, "arrow_yellow_1", { brushsize: 5, speed: 8 }).then(do_arrow_green_2a);
+        (0, _commonJsProline.hand)(_arrow_yellow_1.arrow_yellow_1, "arrow_yellow_1", { brushsize: 5, speed: 8 }).then();
+        do_arrow_green_2a();
     });
 }
 
@@ -1892,11 +1892,19 @@ function do_arrow_green_2a() {
 
     var _masker2 = (0, _commonJsProline.masker)();
 
+    var arrow_green_1b = _masker2.arrow_green_1b;
+    var arrow_green_1c = _masker2.arrow_green_1c;
     var arrow_green_2a = _masker2.arrow_green_2a;
     var arrow_green_2b = _masker2.arrow_green_2b;
     var arrow_green_2c = _masker2.arrow_green_2c;
     var arrow_green_2d = _masker2.arrow_green_2d;
     var arrow_green_2e = _masker2.arrow_green_2e;
+    var arrow_green_2f = _masker2.arrow_green_2f;
+    var arrow_yellow_2 = _masker2.arrow_yellow_2;
+
+    void 0;
+    tl.from(arrow_green_1b, .5, { clip: arrow_green_1b.height + "px, " + arrow_green_1b.width + "px, " + arrow_green_1b.height + "px, " + 0 + "px" });
+    tl.from(arrow_green_1c, .5, { clip: arrow_green_1c.height + "px, " + arrow_green_1c.width + "px, " + arrow_green_1c.height + "px, " + 0 + "px" });
 
     tl.from(arrow_green_2a, .5, { clip: arrow_green_2a.height + "px, " + arrow_green_2a.width + "px, " + arrow_green_2a.height + "px, " + 0 + "px" });
     tl.from(arrow_green_2b, .5, { clip: arrow_green_2b.height + "px, " + arrow_green_2b.width + "px, " + arrow_green_2b.height + "px, " + 0 + "px" }, "-=.3");
@@ -1907,7 +1915,9 @@ function do_arrow_green_2a() {
 
     tl.add("end", "+=.2");
     // tl.to('.pan', 1.2, {x:-600}, "end")
+    tl.from(arrow_yellow_2, .5, { clip: 0 + "px, " + 0 + "px, " + arrow_yellow_2.height + "px, " + 0 + "px" }, "end+=.7");
     tl.from(arrow_green_2e, .5, { clip: 0 + "px, " + 0 + "px, " + arrow_green_2e.height + "px, " + 0 + "px" }, "end+=.7");
+    tl.from(arrow_green_2f, .5, { clip: arrow_green_2f.height + "px, " + arrow_green_2f.width + "px, " + arrow_green_2f.height + "px, " + 0 + "px" }, "end+=.9");
 
     tl.from(["#logo_pro", "#cta", "#footer"], .6, { opacity: 0 }, '-=.2');
     // tl.from("#cta", .3, {opacity:0})
