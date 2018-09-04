@@ -313,9 +313,9 @@ sup {
 }
 
 .frame1 #arrow_green_2e {
-  -webkit-transform: translate(507px, 252px);
-  -ms-transform: translate(507px, 252px);
-  transform: translate(507px, 252px);
+  -webkit-transform: translate(507px, 302px);
+  -ms-transform: translate(507px, 302px);
+  transform: translate(507px, 302px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
