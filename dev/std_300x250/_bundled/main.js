@@ -1876,7 +1876,7 @@ function do_super3() {
 function do_arrow_yellow_1() {
 
     TweenLite.delayedCall(.5, function () {
-        TweenMax.to('.pan', 5, { x: -600, ease: Power1.easeOut });
+        TweenMax.to('#panner', 5, { x: -600, ease: Power1.easeOut });
         TweenMax.set('#arrow_yellow_1', { opacity: 1 });
         (0, _commonJsProline.hand)(_arrow_yellow_1.arrow_yellow_1, "arrow_yellow_1", { brushsize: 5, speed: 8 }).then(do_arrow_green_2a);
     });
@@ -1903,7 +1903,7 @@ function do_arrow_green_2a() {
     tl.from(arrow_green_2c, .5, { clip: arrow_green_2c.height + "px, " + arrow_green_2c.width + "px, " + arrow_green_2c.height + "px, " + arrow_green_2c.width + "px" }, "-=.3");
     tl.from(arrow_green_2d, .5, { clip: 0 + "px, " + arrow_green_2d.width + "px, " + 0 + "px, " + 0 + "px" }, "-=.3");
 
-    tl.set(".frame2", { opacity: 1 });
+    // tl.set(".frame2", {opacity:1})
 
     tl.add("end", "+=.2");
     // tl.to('.pan', 1.2, {x:-600}, "end")

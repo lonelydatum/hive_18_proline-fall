@@ -30,6 +30,9 @@
 }
 
 .frame2{
+	opacity: 1;
+	@include pos(600, 0);
+	
 	#cta_circle{ @include pos(61, 148); }
 }
 
