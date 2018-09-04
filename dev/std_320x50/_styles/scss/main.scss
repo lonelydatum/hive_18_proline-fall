@@ -23,11 +23,11 @@
 }
 
 #phoneMain{
-	@include pos(180, -15);
+	@include pos(162, -30);
 		
 	#phone{
 		transform-origin: 0 0;
-		@include pos-scale(10, 5, .33);
+		@include pos-scale(23, 23, .5);
 		z-index: 0;
 		
 	}

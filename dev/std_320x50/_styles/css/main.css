@@ -213,9 +213,9 @@ sup {
 }
 
 #phoneMain {
-  -webkit-transform: translate(180px, -15px);
-  -ms-transform: translate(180px, -15px);
-  transform: translate(180px, -15px);
+  -webkit-transform: translate(162px, -30px);
+  -ms-transform: translate(162px, -30px);
+  transform: translate(162px, -30px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -227,9 +227,9 @@ sup {
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
-  -webkit-transform: translate(10px, 5px) scale(0.33, 0.33);
-  -ms-transform: translate(10px, 5px) scale(0.33, 0.33);
-  transform: translate(10px, 5px) scale(0.33, 0.33);
+  -webkit-transform: translate(23px, 23px) scale(0.5, 0.5);
+  -ms-transform: translate(23px, 23px) scale(0.5, 0.5);
+  transform: translate(23px, 23px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
