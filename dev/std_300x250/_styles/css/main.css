@@ -382,4 +382,9 @@ sup {
   position: fixed;
 }
 
+#legalContent {
+  width: 300px;
+  height: 250px;
+}
+
 /*# sourceMappingURL=main.css.map */
