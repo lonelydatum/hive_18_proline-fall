@@ -324,4 +324,18 @@ sup {
   opacity: 0;
 }
 
+#borderChalk {
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
 /*# sourceMappingURL=main.css.map */

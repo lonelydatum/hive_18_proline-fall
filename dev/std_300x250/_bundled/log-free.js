@@ -1876,7 +1876,7 @@ function do_super3() {
 function do_arrow_yellow_1() {
 
     TweenLite.delayedCall(.5, function () {
-        TweenMax.to('#panner', 5, { x: -600, ease: Power1.easeOut });
+        TweenMax.to(['#panner', '#panBg'], 5, { x: -600, ease: Power1.easeOut });
         TweenMax.set('#arrow_yellow_1', { opacity: 1 });
         (0, _commonJsProline.hand)(_arrow_yellow_1.arrow_yellow_1, "arrow_yellow_1", { brushsize: 5, speed: 8 }).then(do_arrow_green_2a);
     });

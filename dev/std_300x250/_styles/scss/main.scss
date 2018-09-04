@@ -56,3 +56,10 @@
 	opacity: 0;
 }
 
+#borderChalk{
+	@include pos(0, 0);
+	top:0;
+	left:0;
+	position: fixed;
+}
+
