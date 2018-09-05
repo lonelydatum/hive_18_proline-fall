@@ -431,9 +431,9 @@ sup {
 }
 
 #logo_proSmall {
-  -webkit-transform: translate(-12px, 559px) scale(0.42, 0.42);
-  -ms-transform: translate(-12px, 559px) scale(0.42, 0.42);
-  transform: translate(-12px, 559px) scale(0.42, 0.42);
+  -webkit-transform: translate(7px, 553px) scale(0.8, 0.8);
+  -ms-transform: translate(7px, 553px) scale(0.8, 0.8);
+  transform: translate(7px, 553px) scale(0.8, 0.8);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
