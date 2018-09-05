@@ -1,0 +1,85 @@
+@import '../../../_common/styles/common.scss';
+
+#borderChalk{
+	// @include pos(0, 0);
+	z-index: 0;
+	top:0;
+	left:0;
+	position: fixed;
+}
+
+.frame1 {
+	opacity: 1;
+
+
+	#f2{
+		@include pos(300, 0);		
+	}
+
+	#arrow_green_1{ @include pos-scale-rotate(-12, 159, 1, 36); }
+
+	#arrow_yellow_1{ @include pos(168, 439); }
+	#arrow_yellow_2{ @include pos(258, 94); }
+
+	#arrow_green_1a{ @include pos(30, 388); }
+	#arrow_green_1b{ @include pos(82, 469); }
+	#arrow_green_1c{ @include pos(130, 502); }
+
+
+
+	// #arrow_green_1{ @include pos(-12, -1); }
+	#arrow_green_2a{ @include pos(327, 355); }
+	#arrow_green_2b{ @include pos(415, 327); }
+	#arrow_green_2c{ @include pos(481, 333); }
+	#arrow_green_2d{ @include pos(524, 91); }
+	#arrow_green_2e{ @include pos(507, 302); }
+
+	#arrow_green_3a{ @include pos(641, 52); }
+	#arrow_green_3b{ @include pos(671, 439); }
+
+
+	#arrow_yellow_3a{ @include pos(833, 99); }
+	#arrow_yellow_3b{ @include pos(765, 420); }
+	
+}
+
+.frame2{
+	#cta_circle{ @include pos(61, 336); }
+	@include pos(600, 0);
+}
+
+
+
+#legalBtn{	
+	@include pos(7, 538);
+	opacity: 1;
+	width: 36px;
+	height: 25px;
+	background-color: red;
+	opacity: 0;
+}
+
+#banner{	
+	width: 300px;
+	height: 600px;
+}
+
+.hand, .masker, .end{
+	opacity: 0;
+}
+
+#trace{
+	@include pos(0, 0);
+	
+}
+
+#legalContent{
+	width: 300px;
+	height: 250px;
+
+}
+
+#logo_proSmall{
+	@include pos-scale(-12, 559, .42);
+	
+}
