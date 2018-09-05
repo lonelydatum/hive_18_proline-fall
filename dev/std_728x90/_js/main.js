@@ -70,7 +70,7 @@ function do_arrow_green_2a(){
             hand(cta_circle, "cta_circle", {brushSize:8, speed:1, cleanFromBehind:false, cleanUpWhenDone:false})
         }})
         
-    }}, "+=.5")
+    }}, "+=.1")
 
     // hand(arrow_green_2a, "arrow_green_2a", {brushsize:5, speed:9})
 }

@@ -37,7 +37,7 @@ function do_arrow_green(){
     TweenMax.from(arrow_green_1b, .5, {delay:1.2, clip:`${arrow_green_1b.height}px, ${arrow_green_1b.width}px, ${arrow_green_1b.height}px, ${0}px`})
     TweenMax.from(arrow_green_1c, .5, {delay:1.2, clip:`${arrow_green_1c.height}px, ${arrow_green_1c.width}px, ${arrow_green_1c.height}px, ${0}px`})
     do_super1()    
-    console.log(arrow_green_1b);
+    
 
     
 }
@@ -59,7 +59,7 @@ function do_super3(){
 
 function do_arrow_yellow_1(){
     
-    TweenLite.delayedCall(.3, ()=>{
+    TweenLite.delayedCall(1, ()=>{
         TweenMax.to(['#panner', '#panBg'], 4, {x:-600, ease:Power1.easeOut})    
         TweenMax.set('#arrow_yellow_1', {opacity:1})
         hand(arrow_yellow_1, "arrow_yellow_1", {brushsize:5, speed:8}).then()
@@ -91,7 +91,7 @@ function do_arrow_green_2a(){
 
     tl.add("end", "+=.2")
     // tl.to('.pan', 1.2, {x:-600}, "end")
-    tl.from(arrow_yellow_2, .5, {clip:`${0}px, ${0}px, ${arrow_yellow_2.height}px, ${0}px`}, "end+=.7")
+    // tl.from(arrow_yellow_2, .5, {clip:`${0}px, ${0}px, ${arrow_yellow_2.height}px, ${0}px`}, "end+=.7")
     tl.from(arrow_green_2e, .5, {clip:`${0}px, ${0}px, ${arrow_green_2e.height}px, ${0}px`}, "end+=.7")
     tl.from(arrow_green_2f, .5, {clip:`${arrow_green_2f.height}px, ${arrow_green_2f.width}px, ${arrow_green_2f.height}px, ${0}px`}, "end+=.9")
 
