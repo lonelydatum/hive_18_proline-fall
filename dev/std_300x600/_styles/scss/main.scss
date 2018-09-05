@@ -78,3 +78,7 @@
 	height: 250px;
 
 }
+
+#logo_proSmall{
+	@include pos-scale(-261, -20, .1);
+}

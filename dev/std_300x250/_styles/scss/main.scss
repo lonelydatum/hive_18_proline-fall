@@ -35,6 +35,10 @@
 	
 }
 
+#logo_proSmall{
+	@include pos-scale(-264, -18, .1);
+}
+
 .frame2{
 	opacity: 1;
 	@include pos(600, 0);

@@ -20,7 +20,7 @@ function start(){
 
 
 function do_super(){
-    TweenMax.set('#super', {opacity:1})
+    TweenMax.set(['#super', "#logo_pro"], {opacity:1})
     hand(hand_super1, "super", {brushSize:4, speed:6}).then(logo)
 }
 

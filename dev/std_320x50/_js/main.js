@@ -20,8 +20,9 @@ start()
 function start(){
     const tl = new TimelineMax()
     tl.set(".frame1", {opacity:1}, '+=.3')
-    tl.from('#t1', .3, {opacity:0})
-    tl.from('#phoneMain', .5, {y:90}, "+=.5")
+    // tl.from('#phoneMain', .35, {y:90})
+    tl.from('#t1', .3, {opacity:0}, "+=.5")
+    
 
     
     tl.to('#t1', .3, {opacity:0}, '+=1.5')

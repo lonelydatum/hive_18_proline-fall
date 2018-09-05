@@ -1916,6 +1916,7 @@ function do_arrow_green_2a() {
     // tl.set(".frame2", {opacity:1})
 
     tl.add("end", "+=.2");
+    tl.to("#logo_proSmall", .6, { opacity: 0 });
     // tl.to('.pan', 1.2, {x:-600}, "end")
     // tl.from(arrow_yellow_2, .5, {clip:`${0}px, ${0}px, ${arrow_yellow_2.height}px, ${0}px`}, "end+=.7")
     tl.from(arrow_green_2e, .5, { clip: 0 + "px, " + 0 + "px, " + arrow_green_2e.height + "px, " + 0 + "px" }, "end+=.7");

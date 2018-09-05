@@ -81,6 +81,7 @@ function do_arrow_green_2a(){
     
     tl.set(".frame2", {opacity:1})
     tl.add("end")
+    tl.to("#logo_proSmall", .6, {opacity:0})
     
     tl.from(arrow_green_2e, .55, {clip:`${0}px, ${0}px, ${arrow_green_2e.height}px, ${0}px`}, "end")
     tl.from(arrow_green_3a, .5, {clip:`${arrow_green_3a.height}px, ${arrow_green_3a.width}px, ${arrow_green_3a.height}px, ${0}px`}, "end")
