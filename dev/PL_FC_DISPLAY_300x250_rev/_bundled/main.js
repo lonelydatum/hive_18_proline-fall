@@ -1735,17 +1735,17 @@ function do_arrow_green() {
 
 function do_super1() {
     TweenMax.set('#super1', { opacity: 1 });
-    (0, _commonJsProline.hand)(_super1.hand_super1, "super1", { brushSize: 8, speed: 2 }).then(do_super2);
+    (0, _commonJsProline.hand)(_super1.hand_super1, "super1", { brushSize: 8, speed: 5 }).then(do_super2);
 }
 
 function do_super2() {
     TweenMax.set('#super2', { opacity: 1 });
-    (0, _commonJsProline.hand)(_super2.hand_super2, "super2", { brushSize: 5, speed: 2 }).then(do_super3);
+    (0, _commonJsProline.hand)(_super2.hand_super2, "super2", { brushSize: 5, speed: 5 }).then(do_super3);
 }
 
 function do_super3() {
     TweenMax.set('#super3', { opacity: 1 });
-    (0, _commonJsProline.hand)(_super3.hand_super3, "super3", { brushSize: 5, speed: 2 }).then(do_arrow_yellow_1);
+    (0, _commonJsProline.hand)(_super3.hand_super3, "super3", { brushSize: 5, speed: 5 }).then(do_arrow_yellow_1);
 }
 
 function do_arrow_yellow_1() {
