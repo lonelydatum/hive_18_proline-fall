@@ -9,7 +9,7 @@ import { arrow_yellow_1 } from "./arrow_yellow_1";
 import { arrow_green_2a } from "./arrow_green_2a";
 import { cta_circle } from "./cta_circle";
 
-console.log(arrayClean(hand_super1, 3))
+console.log(arrayClean(hand_super3, 3))
 
 
 
