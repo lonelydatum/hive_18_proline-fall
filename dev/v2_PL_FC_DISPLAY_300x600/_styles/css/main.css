@@ -211,7 +211,6 @@ sup {
   -webkit-perspective: 1000px;
   perspective: 1000px;
   position: absolute;
-  display: none;
 }
 
 .frame1 #arrow_yellow_1 {
