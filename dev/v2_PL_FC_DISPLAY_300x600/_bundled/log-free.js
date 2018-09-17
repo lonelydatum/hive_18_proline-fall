@@ -1852,9 +1852,9 @@ function do_arrow_green() {
     TweenMax.set(arrow_green_1, { opacity: 1, clip: 0 + "px, " + 0 + "px, " + arrow_green_1.height + "px, " + 0 + "px" });
     TweenMax.to(arrow_green_1, .3, { clip: 0 + "px, " + 92 + "px, " + arrow_green_1.height + "px, " + 0 + "px", onComplete: function onComplete() {} });
 
-    TweenMax.from(arrow_green_1a, .5, { delay: 1.2, clip: arrow_green_1a.height + "px, " + arrow_green_1a.width + "px, " + arrow_green_1a.height + "px, " + 0 + "px" });
-    TweenMax.from(arrow_green_1b, .8, { delay: 1.2, clip: arrow_green_1b.height + "px, " + arrow_green_1b.width + "px, " + arrow_green_1b.height + "px, " + 0 + "px" });
-    TweenMax.from(arrow_green_1c, .9, { delay: 1.2, clip: arrow_green_1c.height + "px, " + arrow_green_1c.width + "px, " + arrow_green_1c.height + "px, " + 0 + "px" });
+    TweenMax.from(arrow_green_1a, .5, { delay: 1.8, clip: arrow_green_1a.height + "px, " + arrow_green_1a.width + "px, " + arrow_green_1a.height + "px, " + 0 + "px" });
+    TweenMax.from(arrow_green_1b, .8, { delay: 1.8, clip: arrow_green_1b.height + "px, " + arrow_green_1b.width + "px, " + arrow_green_1b.height + "px, " + 0 + "px" });
+    TweenMax.from(arrow_green_1c, .9, { delay: 1.8, clip: arrow_green_1c.height + "px, " + arrow_green_1c.width + "px, " + arrow_green_1c.height + "px, " + 0 + "px" });
 
     do_super1();
 }

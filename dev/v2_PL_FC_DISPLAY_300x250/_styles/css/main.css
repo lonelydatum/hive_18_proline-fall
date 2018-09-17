@@ -208,6 +208,7 @@ sup {
 
 .frame1 #arrow_green_1 {
   position: absolute;
+  display: none;
 }
 
 .frame1 #arrow_green_1 {

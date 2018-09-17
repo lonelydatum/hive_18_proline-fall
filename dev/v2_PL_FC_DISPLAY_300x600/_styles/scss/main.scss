@@ -16,7 +16,7 @@
 		@include pos(300, 0);		
 	}
 
-	#arrow_green_1{ @include pos-scale-rotate(-12, 159, 1, 36); }
+	#arrow_green_1{ @include pos-scale-rotate(-12, 159, 1, 36); display:none;}
 
 	#arrow_yellow_1{ @include pos(168, 439); }
 	#arrow_yellow_2{ @include pos(278, 94); }
