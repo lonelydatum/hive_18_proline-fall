@@ -7,6 +7,7 @@ import { cta_circle } from "./cta_circle";
 TweenLite.defaultEase = Power2.easeOut
 
 
+console.log(arrayClean(hand_super1, 5));
 
 setTimeout(()=>{    
     start()
@@ -21,7 +22,7 @@ function start(){
 
 function do_super(){
     TweenMax.set(['#super', "#logo_pro"], {opacity:1})
-    hand(hand_super1, "super", {brushSize:4, speed:6}).then(logo)
+    hand(hand_super1, "super", {brushSize:3, speed:4}).then(logo)
 }
 
 

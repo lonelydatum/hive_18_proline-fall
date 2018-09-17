@@ -207,9 +207,9 @@ sup {
 }
 
 .frame1 #super {
-  -webkit-transform: translate(113px, 9px);
-  -ms-transform: translate(113px, 9px);
-  transform: translate(113px, 9px);
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;

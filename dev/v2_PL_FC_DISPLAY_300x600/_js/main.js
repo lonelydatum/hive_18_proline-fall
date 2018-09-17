@@ -9,7 +9,7 @@ import { arrow_yellow_1 } from "./arrow_yellow_1";
 import { arrow_green_2a } from "./arrow_green_2a";
 import { cta_circle } from "./cta_circle";
 
-console.log(arrayClean(hand_super3, 1))
+console.log(arrayClean(hand_super3, 4))
 
 
 
@@ -40,17 +40,17 @@ function do_arrow_green(){
 
 function do_super1(){
     TweenMax.set('#super1', {opacity:1})
-    hand(hand_super1, "super1", {brushSize:5, speed:3}).then(do_super2)
+    hand(hand_super1, "super1", {brushSize:5, speed:6}).then(do_super2)
 }
 
 function do_super2(){
     TweenMax.set('#super2', {opacity:1})
-    hand(hand_super2, "super2", {brushSize:5, speed:1}).then(do_super3)
+    hand(hand_super2, "super2", {brushSize:5, speed:5}).then(do_super3)
 }
 
 function do_super3(){
     TweenMax.set('#super3', {opacity:1})
-    hand(hand_super3, "super3", {brushSize:5, speed:1}).then( ()=>{
+    hand(hand_super3, "super3", {brushSize:5, speed:5 }).then( ()=>{
         TweenLite.delayedCall(1, do_arrow_green_2a )
     }
         

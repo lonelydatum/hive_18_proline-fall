@@ -14,7 +14,7 @@
 		@include pos(20, -10);		
 	}
 
-	#super{ @include pos(113, 9); }
+	#super{ @include pos(0, 0); }
 	#arrow_green_1{ @include pos(143, 39); }
 	#arrow_green_2{ @include pos(408, 41); }
 	#arrow_green_3{ @include pos(446, 37); }

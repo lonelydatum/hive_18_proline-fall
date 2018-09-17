@@ -225,9 +225,9 @@ sup {
 }
 
 .frame1 #arrow_yellow_2 {
-  -webkit-transform: translate(258px, 94px);
-  -ms-transform: translate(258px, 94px);
-  transform: translate(258px, 94px);
+  -webkit-transform: translate(278px, 94px);
+  -ms-transform: translate(278px, 94px);
+  transform: translate(278px, 94px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
