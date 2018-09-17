@@ -20,6 +20,7 @@ function writer(points){
         },
         cleanFromBehind:false
     }
+    
     handwrite.draw(points, options)
 }
 
